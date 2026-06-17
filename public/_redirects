@@ -1,0 +1,5 @@
+# Redirect common guessed URLs to the correct canonical URLs to satisfy checker tools and prevent 404s
+/privacy /privacy-policy 301
+/privacy/ /privacy-policy/ 301
+/about-us /about 301
+/about-us/ /about/ 301
