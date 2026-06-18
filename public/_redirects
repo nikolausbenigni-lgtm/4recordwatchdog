@@ -1,0 +1,10 @@
+# Redirect common guessed URLs to the correct canonical URLs to satisfy checker tools and prevent 404s
+/privacy /privacy-policy/ 301
+/privacy/ /privacy-policy/ 301
+/cookie-policy /cookie-policy/ 301
+/cookies /cookie-policy/ 301
+/cookies/ /cookie-policy/ 301
+/terms-and-conditions /terms/ 301
+/terms-and-conditions/ /terms/ 301
+/about-us /about/ 301
+/about-us/ /about/ 301
