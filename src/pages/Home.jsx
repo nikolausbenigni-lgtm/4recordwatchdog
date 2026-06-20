@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Building2, ChevronDown, ExternalLink, FileText, Gavel, Landmark, Search, ShieldCheck, User, Users } from 'lucide-react';
+import { Building2, ChevronDown, ExternalLink, FileText, Gavel, Landmark, Search, ShieldCheck, Users } from 'lucide-react';
 
 const states = [
   { name: 'All States', abbr: '', biz: '' },
@@ -105,7 +105,6 @@ const links = {
   courtListener: 'https://www.courtlistener.com/',
   docketAlarm: 'https://www.docketalarm.com/',
   unicourt: 'https://unicourt.com/',
-  nsopw: 'https://www.nsopw.gov/search-public-sex-offender-registries',
   pacerCaseLocator: 'https://pcl.uscourts.gov/pcl/index.jsf',
 };
 
@@ -132,15 +131,6 @@ function Card({ icon: Icon, title, text, href, tag }) {
   );
 }
 
-function AdBox({ compact = false }) {
-  return (
-    <div className={`${compact ? 'py-1' : 'py-2'}`}>
-      <div className="mb-2 flex items-center justify-end"><span className="text-[9px] font-bold uppercase tracking-[0.18em] text-slate-300">Advertisement</span></div>
-      <div className={`w-full overflow-hidden rounded-2xl bg-slate-100/80 ${compact ? 'h-[140px]' : 'h-[220px]'}`} />
-    </div>
-  );
-}
-
 function SectionAccent({ icon: Icon, orange = false }) {
   return (
     <>
@@ -158,11 +148,6 @@ export default function Home() {
   const [selectedState, setSelectedState] = useState('All States');
   const [selectedCounty, setSelectedCounty] = useState('');
   const [name, setName] = useState('');
-  const [street, setStreet] = useState('');
-  const [city, setCity] = useState('');
-  const [sexState, setSexState] = useState('');
-  const [zip, setZip] = useState('');
-  const [radius, setRadius] = useState('5');
 
   const hasState = selectedState !== 'All States';
   const state = states.find((s) => s.name === selectedState && s.name !== 'All States');
@@ -188,7 +173,7 @@ export default function Home() {
         <div className="relative mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-[1.3fr_.7fr] lg:py-20">
           <div>
             <h1 className="max-w-4xl text-5xl font-black leading-tight tracking-tight md:text-7xl">Search Public Records.<br /><span className="text-[#ff6f36]">Find What Matters.</span></h1>
-            <p className="mt-6 max-w-3xl text-xl leading-8 text-slate-200">Start with a state, then access business entity search, lawsuit records, incarceration records, bankruptcy tools, and sex offender registry resources.</p>
+            <p className="mt-6 max-w-3xl text-xl leading-8 text-slate-200">Start with a state, then access business entity search, lawsuit records, incarceration records, and bankruptcy tools.</p>
             <div className="mt-8 flex flex-wrap gap-3 text-sm font-bold text-slate-200">
               <span className="rounded-full border border-white/20 bg-white/10 px-4 py-2">50 State Directories</span>
               <span className="rounded-full border border-white/20 bg-white/10 px-4 py-2">Official Sources</span>
@@ -221,7 +206,6 @@ export default function Home() {
           </div>
 
           <div className="grid content-center gap-8">
-            <AdBox />
             <div className="space-y-6 pt-2">
               <div className="flex items-start gap-4">
                 <ShieldCheck className="mt-1 h-8 w-8 shrink-0 text-[#ff6f36]" />
@@ -263,10 +247,9 @@ export default function Home() {
             <span className="rounded-full bg-slate-100 px-4 py-2">Registered Agents</span>
           </div>
         </div>
-        <div className="relative z-10 grid gap-5 md:grid-cols-3">
+        <div className="relative z-10 grid gap-5 md:grid-cols-2">
           <Card icon={Building2} title={hasState ? `${selectedState} Entity Search` : 'Select a State First'} text={hasState ? 'Look up official Secretary of State business filings.' : 'Choose a state above to display the official business search link.'} href={hasState ? businessUrl : undefined} tag={hasState ? 'Official source' : 'State required'} />
           <Card icon={FileText} title="Business Filing Tips" text="Search by exact name, partial name, officer, registered agent, or entity number when available." />
-          <AdBox compact />
         </div>
       </section>
 
@@ -282,7 +265,7 @@ export default function Home() {
             <span className="rounded-full bg-slate-100 px-4 py-2">County Court Records</span>
           </div>
 
-          <div className="mt-8 grid gap-5 lg:grid-cols-3">
+          <div className="mt-8 grid gap-5 lg:grid-cols-2">
             <Card icon={Gavel} title={hasState ? `${selectedState} Court Directory` : 'Select a State First'} text={hasState ? 'Use official court and clerk resources for lawsuit and civil case records.' : 'Choose a state in the hero section above to load county lawsuit record options.'} tag={hasState ? 'Lawsuit source' : 'State required'} />
             <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
               <div className="mb-4 flex items-start gap-3">
@@ -295,12 +278,9 @@ export default function Home() {
               </select>
               <div className="mt-4 w-full"><ButtonLink href={lawsuitUrl}>{selectedCountyLink ? 'Open Lawsuit Search' : 'Court Directory'}</ButtonLink></div>
             </div>
-            <AdBox compact />
           </div>
         </div>
       </section>
-
-      <section className="px-5 py-5"><div className="mx-auto max-w-7xl"><div className="py-2"><div className="mb-2 flex items-center justify-end"><span className="text-[9px] font-bold uppercase tracking-[0.18em] text-slate-300">Advertisement</span></div><div className="h-[120px] w-full overflow-hidden rounded-3xl bg-slate-100/80" /></div></div></section>
 
       <section id="bankruptcy" className="relative mx-auto max-w-7xl overflow-hidden px-5 py-16">
         <SectionAccent icon={FileText} orange />
@@ -345,51 +325,11 @@ export default function Home() {
               <ButtonLink href={inmateUrl}>{hasState ? `Open ${selectedState} Search` : 'Open State Directory'}</ButtonLink>
             </div>
           </div>
-          <div className="mt-8 grid gap-5 md:grid-cols-3">
+          <div className="mt-8 grid gap-5 md:grid-cols-2">
             <Card icon={ShieldCheck} title="Federal Inmate Locator" text="Search Bureau of Prisons records for federal inmates, federal convictions, and U.S. federal custody records." href={links.bop} />
             <Card icon={Users} title="County Jail Directory" text="Search county jail rosters, sheriff inmate databases, and local detention records by county or sheriff office." href="https://www.usa.gov/local-governments" />
-            <AdBox compact />
           </div>
         </div>
-      </section>
-
-      <section id="sex" className="relative mx-auto max-w-7xl overflow-hidden px-5 py-16">
-        <SectionAccent icon={ShieldCheck} orange />
-        <div className="relative z-10">
-          <p className="font-black uppercase tracking-[0.2em] text-[#ff6f36]">Public safety</p>
-          <h2 className="mt-2 text-4xl font-black">National Sex Offender Registry</h2>
-          <p className="mt-3 max-w-3xl text-slate-600">Search the official NSOPW registry by name or address-radius lookup. The National Sex Offender Public Website aggregates participating state, territorial, and tribal registry systems into one searchable platform.</p>
-          <div className="mt-5 flex flex-wrap gap-3 text-sm font-bold text-slate-600">
-            <span className="rounded-full bg-orange-50 px-4 py-2 text-[#ff6f36]">National Registry</span>
-            <span className="rounded-full bg-slate-100 px-4 py-2">Address Radius Search</span>
-            <span className="rounded-full bg-slate-100 px-4 py-2">Public Safety Records</span>
-          </div>
-        </div>
-        <div className="relative z-10 mt-8 grid gap-6 lg:grid-cols-2">
-          <div className="rounded-3xl border bg-white p-7 shadow-sm">
-            <div className="mb-5 flex items-center gap-4"><User className="h-8 w-8 text-[#ff6f36]" /><h3 className="text-2xl font-black">Name Lookup</h3></div>
-            <input value={name} onChange={(e) => setName(e.target.value)} placeholder="First and last name" className="w-full rounded-xl border px-4 py-4 outline-none" />
-            <div className="mt-5 w-full"><ButtonLink href={links.nsopw}>Open Name Search</ButtonLink></div>
-          </div>
-          <div className="rounded-3xl border bg-white p-7 shadow-sm">
-            <div className="mb-5 flex items-center gap-4"><Search className="h-8 w-8 text-[#101943]" /><h3 className="text-2xl font-black">Address Radius Lookup</h3></div>
-            <div className="grid gap-3">
-              <input value={street} onChange={(e) => setStreet(e.target.value)} placeholder="Street address" className="rounded-xl border px-4 py-4 outline-none" />
-              <div className="grid gap-3 sm:grid-cols-[1fr_130px]">
-                <input value={city} onChange={(e) => setCity(e.target.value)} placeholder="City" className="rounded-xl border px-4 py-4 outline-none" />
-                <input value={sexState} onChange={(e) => setSexState(e.target.value)} placeholder="State" className="rounded-xl border px-4 py-4 outline-none" />
-              </div>
-              <div className="grid gap-3 sm:grid-cols-[1fr_130px]">
-                <input value={zip} onChange={(e) => setZip(e.target.value)} placeholder="ZIP code" className="rounded-xl border px-4 py-4 outline-none" />
-                <select value={radius} onChange={(e) => setRadius(e.target.value)} className="rounded-xl border px-4 py-4 font-bold outline-none">
-                  <option value="1">1 Mile</option><option value="5">5 Miles</option><option value="10">10 Miles</option><option value="25">25 Miles</option>
-                </select>
-              </div>
-            </div>
-            <div className="mt-5 w-full"><ButtonLink href={links.nsopw} dark>Open Address Search</ButtonLink></div>
-          </div>
-        </div>
-        <p className="relative z-10 mt-5 text-sm text-slate-600">Address searches are completed on the official NSOPW website. RecordWatchdog does not host registry records.</p>
       </section>
 
       <section className="mx-auto max-w-7xl px-5 py-16">
@@ -456,7 +396,6 @@ export default function Home() {
               <li className="flex items-start gap-3 text-sm leading-6 text-slate-700"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-[#ff6f36]"></span><strong>Incarceration & Jail Rosters:</strong> State Department of Corrections inmate locators and county jail databases.</li>
               <li className="flex items-start gap-3 text-sm leading-6 text-slate-700"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-[#ff6f36]"></span><strong>Federal Bankruptcy Filings:</strong> Chapter 7, 11, and 13 records via the official PACER system.</li>
               <li className="flex items-start gap-3 text-sm leading-6 text-slate-700"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-[#ff6f36]"></span><strong>Property & Real Estate:</strong> County assessor values, deed histories, and tax lien records.</li>
-              <li className="flex items-start gap-3 text-sm leading-6 text-slate-700"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-[#ff6f36]"></span><strong>Public Safety Registries:</strong> Official National Sex Offender Public Website (NSOPW) geographic and name searches.</li>
             </ul>
           </div>
         </div>
@@ -504,7 +443,6 @@ export default function Home() {
             ].map((item) => <Chip key={item.label} href={item.href}>{item.label}</Chip>)}
           </div>
         </div>
-        <div className="mt-10"><AdBox /></div>
       </section>
     </main>
   );
