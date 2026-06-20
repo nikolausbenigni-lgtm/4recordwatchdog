@@ -94,9 +94,6 @@ export default function Layout({ children }) {
               <a href="/#bankruptcy" className="flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-[#101943] shadow-sm transition hover:border-[#ff6f36] hover:bg-orange-50 hover:text-[#ff6f36]">
                 <FileText className="h-3.5 w-3.5" /> Bankruptcy
               </a>
-              <a href="/#sex" className="flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-[#101943] shadow-sm transition hover:border-[#ff6f36] hover:bg-orange-50 hover:text-[#ff6f36]">
-                <ShieldCheck className="h-3.5 w-3.5" /> Sex Offenders
-              </a>
             </div>
           </div>
         </div>
