@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RecordWatchdog - Public Records Guides & Free Search Directory</title>
+  <meta name="description" content="Search official public records by state. Access business filings, court records, incarceration data, and bankruptcy tools. Free directory." />
+  <meta name="robots" content="index, follow" />
+  <meta name="google-site-verification" content="_39_XmfiyJvFJbEm7OP2tx2A-0WWIGn6_HOvqyOv5gw" />
+  <link rel="canonical" href="https://recordwatchdog.com/" />
+  <link rel="icon" type="image/png" href="/recordwatchdog-logo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="RecordWatchdog - Public Records Guides & Free Search Directory" />
+  <meta property="og:description" content="Search official public records by state. Access business filings, court records, incarceration data, and bankruptcy tools. Free directory." />
+  <meta property="og:image" content="https://recordwatchdog.com/images/og/default.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="RecordWatchdog - Public Records Guides & Free Search Directory" />
+  <meta property="twitter:description" content="Search official public records by state. Access business filings, court records, incarceration data, and bankruptcy tools. Free directory." />
+  <meta property="twitter:image" content="https://recordwatchdog.com/images/og/default.jpg" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://cdn.tailwindcss.com https://pagead2.googlesyndication.com https://*.adtrafficquality.google https://www.googletagservices.com https://partner.googleadservices.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: http: blob:; font-src 'self' https://fonts.gstatic.com; frame-src https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://bid.g.doubleclick.net https://*.googlesyndication.com https://*.google.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://pagead2.googlesyndication.com https://*.adtrafficquality.google;" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7ZXH6EXHV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    // Consent Mode: analytics and ad storage stay off until the visitor clicks Accept All.
+    gtag('consent', 'default', { 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied', 'analytics_storage': 'denied' });
+    try {
+      if (localStorage.getItem('cookieConsent') === 'true') {
+        gtag('consent', 'update', { 'ad_storage': 'granted', 'ad_user_data': 'granted', 'ad_personalization': 'granted', 'analytics_storage': 'granted' });
+      }
+    } catch (e) {}
+    gtag('js', new Date());
+    gtag('config', 'G-Q7ZXH6EXHV');
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { primary: '#101943', accent: '#ff6f36' } } } }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .prose h2 { font-size: 1.5rem; font-weight: 800; color: #101943; margin-top: 2rem; margin-bottom: 1rem; }
+    .prose p { margin-bottom: 1rem; line-height: 1.75; color: #334155; }
+    .prose ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem; color: #334155; }
+    .prose li { margin-bottom: 0.5rem; }
+    .prose h2[id] { scroll-margin-top: 6rem; }
+    .article-hero { margin: 1.75rem 0 0; }
+    .article-hero img { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 420; object-fit: cover; border-radius: 1.25rem; background: #e2e8f0; }
+    .mid-figure img { aspect-ratio: 1200 / 240; object-fit: cover; border: 0; }
+    .mid-figure figcaption { font-size: 0.95rem; color: #334155; }
+    .guide-figure { margin: 2rem 0; }
+    .guide-figure img { display: block; width: 100%; height: auto; border: 1px solid #e2e8f0; border-radius: 1rem; background: #fff; }
+    .guide-figure figcaption { margin-top: 0.6rem; text-align: center; font-size: 0.85rem; color: #64748b; }
+    .prose ol { list-style-type: decimal; padding-left: 1.5rem; margin-bottom: 1rem; color: #334155; }
+    .prose strong { color: #101943; }
+  </style>
+</head>
+<body class="min-h-screen bg-slate-50 text-primary flex flex-col font-sans">
+  <div class="sticky top-0 z-50 bg-white/95 shadow-sm backdrop-blur-sm">
+    <header class="border-b border-slate-100">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-5 px-5 py-1.5">
+        <a href="/" class="flex items-center gap-2 group leading-none">
+          <img src="/recordwatchdog-logo.png" alt="RecordWatchdog" class="h-auto min-w-[150px] max-w-[160px] object-contain" loading="lazy" decoding="async" />
+        </a>
+      <nav class="hidden xl:block flex-1">
+        <ul class="flex items-center justify-end gap-6 text-sm font-bold">
+          <li><a href="/" class="transition hover:text-accent">Home</a></li>
+          <li><a href="/about/" class="transition hover:text-accent">About</a></li>
+          <li><a href="/blog/" class="transition hover:text-accent">Guides</a></li>
+          <li><a href="/#directory" class="transition hover:text-accent">Directory</a></li>
+          <li><a href="/tools/" class="transition hover:text-accent">Tools</a></li>
+          <li><a href="/faq/" class="transition hover:text-accent">FAQ</a></li>
+          <li><a href="/contact/" class="transition hover:text-accent">Contact</a></li>
+        </ul>
+      </nav>
+      </div>
+    </header>
+    <div class="border-b border-slate-200 bg-slate-50/80 py-3">
+      <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 sm:flex-row">
+        <h3 class="text-xs font-black uppercase tracking-wider text-primary">Search Public Records:</h3>
+        <div class="flex flex-wrap justify-center gap-2">
+          <a href="/#business" class="flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-primary shadow-sm transition hover:border-accent hover:bg-orange-50 hover:text-accent">
+            <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg> Business
+          </a>
+          <a href="/#court" class="flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-primary shadow-sm transition hover:border-accent hover:bg-orange-50 hover:text-accent">
+            <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg> Lawsuits
+          </a>
+          <a href="/#inmates" class="flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-primary shadow-sm transition hover:border-accent hover:bg-orange-50 hover:text-accent">
+            <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg> Incarceration
+          </a>
+          <a href="/#bankruptcy" class="flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-primary shadow-sm transition hover:border-accent hover:bg-orange-50 hover:text-accent">
+            <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg> Bankruptcy
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="flex-grow">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"RecordWatchdog","url":"https://recordwatchdog.com/","description":"Free directory to search official public records by state. Find business entity filings, county court records, incarceration databases, and bankruptcy filings.","potentialAction":{"@type":"SearchAction","target":"https://recordwatchdog.com/?state={state}","query-input":"required name=state"}}</script>
+
+  
+  <section class="relative overflow-hidden bg-[#071638] text-white">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(255,255,255,.14),transparent_28%),radial-gradient(circle_at_82%_8%,rgba(255,111,54,.2),transparent_26%)]"></div>
+    <div class="relative mx-auto max-w-4xl px-5 py-20 text-center lg:py-28">
+      <p class="font-black uppercase tracking-[0.2em] text-accent">Public records guides &amp; free tools</p>
+      <h1 class="mt-4 text-4xl font-black leading-tight tracking-tight md:text-6xl">Public Records, <span class="text-accent">Explained Clearly.</span></h1>
+      <p class="mx-auto mt-6 max-w-3xl text-xl leading-8 text-slate-200">Plain-English guides to court, business, property, and bankruptcy records, plus free tools that show you where a record is kept and help you write a records request. A free state-by-state search directory is further down the page.</p>
+      <div class="mt-10 flex flex-wrap justify-center gap-4">
+        <a href="/blog/" class="rounded-xl bg-accent px-8 py-4 font-black text-white shadow-lg transition hover:bg-[#e55a25]">Read the Guides</a>
+        <a href="#directory" class="rounded-xl border border-white/30 px-8 py-4 font-black text-white transition hover:bg-white/10">Search the Directory</a>
+      </div>
+      <div class="mt-12 flex flex-wrap justify-center gap-3 text-sm font-bold text-slate-200">
+        <span class="rounded-full border border-white/20 bg-white/10 px-4 py-2">29 in-depth guides</span>
+        <a href="/tools/" class="rounded-full border border-white/20 bg-white/10 px-4 py-2 transition hover:bg-white/20">2 free tools</a>
+        <span class="rounded-full border border-white/20 bg-white/10 px-4 py-2">Official sources</span>
+      </div>
+    </div>
+  </section>
+
+
+  
+  <section id="guides" class="scroll-mt-16 bg-slate-50/70 py-16">
+    <div class="mx-auto max-w-7xl px-5">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p class="font-black uppercase tracking-[0.2em] text-accent">Latest guides</p>
+          <h2 class="mt-2 text-3xl font-black text-primary md:text-4xl">Newest Public Records Guides</h2>
+          <p class="mt-3 max-w-3xl text-slate-600">Step-by-step explanations of how court, business, property, and bankruptcy records work.</p>
+          <p class="mt-3 text-sm font-bold"><a href="/start-here/" class="text-accent hover:underline">New to public records? Start here &rarr;</a></p>
+        </div>
+        <a href="/blog/" class="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-black text-primary transition hover:border-accent hover:text-accent">View all 29 guides &rarr;</a>
+      </div>
+      <div class="mt-10 grid gap-7 md:grid-cols-2 lg:grid-cols-3">
+        
+  <a href="/blog/how-to-search-public-records-in-georgia/" data-cat="states" data-search="how to search public records in georgia georgia has 159 counties, a statewide land records index, and one of the shortest response deadlines in the country. learn how to find business, court, and property records and use the open records act. state guides" class="blog-card group flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-transparent hover:shadow-2xl md:col-span-2">
+    <div class="relative flex h-44 md:h-52 items-end bg-gradient-to-br from-[#0a3d62] to-[#2b86c5] p-5">
+      <span class="pointer-events-none absolute right-5 top-3 select-none text-5xl opacity-30 transition duration-300 group-hover:scale-110 group-hover:opacity-60" aria-hidden="true">🗺️</span>
+      <span class="rounded-full bg-white px-3 py-1 text-[11px] font-black uppercase tracking-wider text-[#0a3d62]">State Guides</span>
+    </div>
+    <div class="flex flex-1 flex-col p-6">
+      <h3 class="text-2xl md:text-3xl font-black leading-snug text-primary transition group-hover:text-accent">How to Search Public Records in Georgia</h3>
+      <p class="mt-3 flex-1 text-sm leading-6 text-slate-600 ">Georgia has 159 counties, a statewide land records index, and one of the shortest response deadlines in the country. Learn how to find business, court, and property records and use the Open Records Act.</p>
+      <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4 text-xs font-bold text-slate-500">
+        <span>November 10, 2026 &bull; 3 min read</span>
+        <span class="text-sm font-black text-accent transition group-hover:translate-x-1">Read &rarr;</span>
+      </div>
+    </div>
+  </a>
+  <a href="/blog/how-to-search-public-records-in-illinois/" data-cat="states" data-search="how to search public records in illinois illinois court and land records are kept by 102 counties, and cook county is a world of its own. learn how to search business, court, and property records and how the illinois foia works. state guides" class="blog-card group flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-transparent hover:shadow-2xl ">
+    <div class="relative flex h-28 items-end bg-gradient-to-br from-[#0a3d62] to-[#2b86c5] p-5">
+      <span class="pointer-events-none absolute right-5 top-3 select-none text-5xl opacity-30 transition duration-300 group-hover:scale-110 group-hover:opacity-60" aria-hidden="true">🗺️</span>
+      <span class="rounded-full bg-white px-3 py-1 text-[11px] font-black uppercase tracking-wider text-[#0a3d62]">State Guides</span>
+    </div>
+    <div class="flex flex-1 flex-col p-6">
+      <h3 class="text-xl font-black leading-snug text-primary transition group-hover:text-accent">How to Search Public Records in Illinois</h3>
+      <p class="mt-3 flex-1 text-sm leading-6 text-slate-600 line-clamp-3">Illinois court and land records are kept by 102 counties, and Cook County is a world of its own. Learn how to search business, court, and property records and how the Illinois FOIA works.</p>
+      <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4 text-xs font-bold text-slate-500">
+        <span>November 10, 2026 &bull; 3 min read</span>
+        <span class="text-sm font-black text-accent transition group-hover:translate-x-1">Read &rarr;</span>
+      </div>
+    </div>
+  </a>
+  <a href="/blog/how-to-search-public-records-in-pennsylvania/" data-cat="states" data-search="how to search public records in pennsylvania pennsylvania has a strong statewide court portal and a clear right-to-know law process with an independent appeals office. learn how business, court, and property records are organized. state guides" class="blog-card group flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-transparent hover:shadow-2xl ">
+    <div class="relative flex h-28 items-end bg-gradient-to-br from-[#0a3d62] to-[#2b86c5] p-5">
+      <span class="pointer-events-none absolute right-5 top-3 select-none text-5xl opacity-30 transition duration-300 group-hover:scale-110 group-hover:opacity-60" aria-hidden="true">🗺️</span>
+      <span class="rounded-full bg-white px-3 py-1 text-[11px] font-black uppercase tracking-wider text-[#0a3d62]">State Guides</span>
+    </div>
+    <div class="flex flex-1 flex-col p-6">
+      <h3 class="text-xl font-black leading-snug text-primary transition group-hover:text-accent">How to Search Public Records in Pennsylvania</h3>
+      <p class="mt-3 flex-1 text-sm leading-6 text-slate-600 line-clamp-3">Pennsylvania has a strong statewide court portal and a clear Right-to-Know Law process with an independent appeals office. Learn how business, court, and property records are organized.</p>
+      <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4 text-xs font-bold text-slate-500">
+        <span>November 10, 2026 &bull; 3 min read</span>
+        <span class="text-sm font-black text-accent transition group-hover:translate-x-1">Read &rarr;</span>
+      </div>
+    </div>
+  </a>
+  <a href="/blog/how-to-search-public-records-in-new-york/" data-cat="states" data-search="how to search public records in new york new york's court system has unusual names, and new york city records are handled differently from the rest of the state. a guide to business, court, and property searches and to the freedom of information law. state guides" class="blog-card group flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-transparent hover:shadow-2xl ">
+    <div class="relative flex h-28 items-end bg-gradient-to-br from-[#0a3d62] to-[#2b86c5] p-5">
+      <span class="pointer-events-none absolute right-5 top-3 select-none text-5xl opacity-30 transition duration-300 group-hover:scale-110 group-hover:opacity-60" aria-hidden="true">🗺️</span>
+      <span class="rounded-full bg-white px-3 py-1 text-[11px] font-black uppercase tracking-wider text-[#0a3d62]">State Guides</span>
+    </div>
+    <div class="flex flex-1 flex-col p-6">
+      <h3 class="text-xl font-black leading-snug text-primary transition group-hover:text-accent">How to Search Public Records in New York</h3>
+      <p class="mt-3 flex-1 text-sm leading-6 text-slate-600 line-clamp-3">New York's court system has unusual names, and New York City records are handled differently from the rest of the state. A guide to business, court, and property searches and to the Freedom of Information Law.</p>
+      <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4 text-xs font-bold text-slate-500">
+        <span>November 10, 2026 &bull; 3 min read</span>
+        <span class="text-sm font-black text-accent transition group-hover:translate-x-1">Read &rarr;</span>
+      </div>
+    </div>
+  </a>
+  <a href="/blog/how-to-search-public-records-in-florida/" data-cat="states" data-search="how to search public records in florida florida's clerk of the circuit court handles both court files and official land records. learn how business, court, and property searches work and how chapter 119 applies to records requests. state guides" class="blog-card group flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-transparent hover:shadow-2xl ">
+    <div class="relative flex h-28 items-end bg-gradient-to-br from-[#0a3d62] to-[#2b86c5] p-5">
+      <span class="pointer-events-none absolute right-5 top-3 select-none text-5xl opacity-30 transition duration-300 group-hover:scale-110 group-hover:opacity-60" aria-hidden="true">🗺️</span>
+      <span class="rounded-full bg-white px-3 py-1 text-[11px] font-black uppercase tracking-wider text-[#0a3d62]">State Guides</span>
+    </div>
+    <div class="flex flex-1 flex-col p-6">
+      <h3 class="text-xl font-black leading-snug text-primary transition group-hover:text-accent">How to Search Public Records in Florida</h3>
+      <p class="mt-3 flex-1 text-sm leading-6 text-slate-600 line-clamp-3">Florida's Clerk of the Circuit Court handles both court files and official land records. Learn how business, court, and property searches work and how Chapter 119 applies to records requests.</p>
+      <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4 text-xs font-bold text-slate-500">
+        <span>November 10, 2026 &bull; 3 min read</span>
+        <span class="text-sm font-black text-accent transition group-hover:translate-x-1">Read &rarr;</span>
+      </div>
+    </div>
+  </a>
+  <a href="/blog/how-to-search-public-records-in-texas/" data-cat="states" data-search="how to search public records in texas texas keeps most records at the county level. learn which office holds court, property, and business records, and how the texas public information act and its 10-business-day rule work. state guides" class="blog-card group flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-transparent hover:shadow-2xl ">
+    <div class="relative flex h-28 items-end bg-gradient-to-br from-[#0a3d62] to-[#2b86c5] p-5">
+      <span class="pointer-events-none absolute right-5 top-3 select-none text-5xl opacity-30 transition duration-300 group-hover:scale-110 group-hover:opacity-60" aria-hidden="true">🗺️</span>
+      <span class="rounded-full bg-white px-3 py-1 text-[11px] font-black uppercase tracking-wider text-[#0a3d62]">State Guides</span>
+    </div>
+    <div class="flex flex-1 flex-col p-6">
+      <h3 class="text-xl font-black leading-snug text-primary transition group-hover:text-accent">How to Search Public Records in Texas</h3>
+      <p class="mt-3 flex-1 text-sm leading-6 text-slate-600 line-clamp-3">Texas keeps most records at the county level. Learn which office holds court, property, and business records, and how the Texas Public Information Act and its 10-business-day rule work.</p>
+      <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4 text-xs font-bold text-slate-500">
+        <span>November 10, 2026 &bull; 4 min read</span>
+        <span class="text-sm font-black text-accent transition group-hover:translate-x-1">Read &rarr;</span>
+      </div>
+    </div>
+  </a>
+  <a href="/blog/how-to-request-certified-copies-of-public-records/" data-cat="property" data-search="how to request certified copies of public records when a plain printout is not enough, you need a certified copy. learn what certification means, how to order, what it costs, and how to avoid delays. property & government records" class="blog-card group flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-transparent hover:shadow-2xl ">
+    <div class="relative flex h-28 items-end bg-gradient-to-br from-[#0b5a49] to-[#22b08a] p-5">
+      <span class="pointer-events-none absolute right-5 top-3 select-none text-5xl opacity-30 transition duration-300 group-hover:scale-110 group-hover:opacity-60" aria-hidden="true">🏠</span>
+      <span class="rounded-full bg-white px-3 py-1 text-[11px] font-black uppercase tracking-wider text-[#0b5a49]">Property & Government Records</span>
+    </div>
+    <div class="flex flex-1 flex-col p-6">
+      <h3 class="text-xl font-black leading-snug text-primary transition group-hover:text-accent">How to Request Certified Copies of Public Records</h3>
+      <p class="mt-3 flex-1 text-sm leading-6 text-slate-600 line-clamp-3">When a plain printout is not enough, you need a certified copy. Learn what certification means, how to order, what it costs, and how to avoid delays.</p>
+      <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4 text-xs font-bold text-slate-500">
+        <span>November 2, 2026 &bull; 3 min read</span>
+        <span class="text-sm font-black text-accent transition group-hover:translate-x-1">Read &rarr;</span>
+      </div>
+    </div>
+  </a>
+  <a href="/blog/county-clerk-vs-recorder-vs-assessor-who-holds-which-records/" data-cat="property" data-search="county clerk vs. recorder vs. assessor: who holds which records? county and state offices go by different names in different states. this guide explains what each office does so you can find the right one for the record you need. property & government records" class="blog-card group flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-transparent hover:shadow-2xl ">
+    <div class="relative flex h-28 items-end bg-gradient-to-br from-[#0b5a49] to-[#22b08a] p-5">
+      <span class="pointer-events-none absolute right-5 top-3 select-none text-5xl opacity-30 transition duration-300 group-hover:scale-110 group-hover:opacity-60" aria-hidden="true">🏠</span>
+      <span class="rounded-full bg-white px-3 py-1 text-[11px] font-black uppercase tracking-wider text-[#0b5a49]">Property & Government Records</span>
+    </div>
+    <div class="flex flex-1 flex-col p-6">
+      <h3 class="text-xl font-black leading-snug text-primary transition group-hover:text-accent">County Clerk vs. Recorder vs. Assessor: Who Holds Which Records?</h3>
+      <p class="mt-3 flex-1 text-sm leading-6 text-slate-600 line-clamp-3">County and state offices go by different names in different states. This guide explains what each office does so you can find the right one for the record you need.</p>
+      <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4 text-xs font-bold text-slate-500">
+        <span>November 2, 2026 &bull; 3 min read</span>
+        <span class="text-sm font-black text-accent transition group-hover:translate-x-1">Read &rarr;</span>
+      </div>
+    </div>
+  </a>
+      </div>
+      <div class="mt-16">
+        <h2 class="text-2xl font-black text-primary">Browse by Topic</h2>
+        <div class="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-5">
+          
+            <div class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+              <div class="flex items-center gap-3 bg-gradient-to-br from-[#0a3d62] to-[#2b86c5] px-6 py-5 text-white">
+                <span class="text-3xl" aria-hidden="true">🗺️</span>
+                <h3 class="text-lg font-black leading-tight"><a href="/blog/category/states/" class="hover:underline">State Guides</a></h3>
+              </div>
+              <div class="p-6">
+                <p class="text-sm leading-6 text-slate-600">State-by-state guides to court, business, property, and public records laws.</p>
+                <ul class="mt-4 space-y-2 text-sm">
+                  <li><a href="/blog/how-to-search-public-records-in-georgia/" class="font-bold text-accent hover:underline">How to Search Public Records in Georgia</a></li><li><a href="/blog/how-to-search-public-records-in-illinois/" class="font-bold text-accent hover:underline">How to Search Public Records in Illinois</a></li><li><a href="/blog/how-to-search-public-records-in-pennsylvania/" class="font-bold text-accent hover:underline">How to Search Public Records in Pennsylvania</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+              <div class="flex items-center gap-3 bg-gradient-to-br from-[#0f2a6b] to-[#3b6fe0] px-6 py-5 text-white">
+                <span class="text-3xl" aria-hidden="true">🏢</span>
+                <h3 class="text-lg font-black leading-tight"><a href="/blog/category/business/" class="hover:underline">Business Records</a></h3>
+              </div>
+              <div class="p-6">
+                <p class="text-sm leading-6 text-slate-600">LLC filings, registered agents, licenses, and checking out a company.</p>
+                <ul class="mt-4 space-y-2 text-sm">
+                  <li><a href="/blog/how-to-conduct-due-diligence-on-a-new-business-partner/" class="font-bold text-accent hover:underline">How to Conduct Due Diligence on a New Business Partner</a></li><li><a href="/blog/the-importance-of-registered-agents-in-business-filings/" class="font-bold text-accent hover:underline">The Importance of Registered Agents in Business Filings</a></li><li><a href="/blog/how-to-verify-a-contractors-business-license/" class="font-bold text-accent hover:underline">How to Verify a Contractor's Business License and Protect Your Investment</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+              <div class="flex items-center gap-3 bg-gradient-to-br from-[#3b1d6e] to-[#8a5ce0] px-6 py-5 text-white">
+                <span class="text-3xl" aria-hidden="true">⚖️</span>
+                <h3 class="text-lg font-black leading-tight"><a href="/blog/category/courts/" class="hover:underline">Court & Bankruptcy Records</a></h3>
+              </div>
+              <div class="p-6">
+                <p class="text-sm leading-6 text-slate-600">County dockets, PACER, civil vs. criminal cases, and bankruptcy filings.</p>
+                <ul class="mt-4 space-y-2 text-sm">
+                  <li><a href="/blog/pacer-vs-courtlistener-which-should-you-use/" class="font-bold text-accent hover:underline">PACER vs. CourtListener: Which Should You Use for Federal Court Records?</a></li><li><a href="/blog/understanding-chapter-7-vs-chapter-13-bankruptcy-filings/" class="font-bold text-accent hover:underline">Understanding Chapter 7 vs. Chapter 13 Bankruptcy Filings</a></li><li><a href="/blog/common-mistakes-people-make-when-searching-court-records/" class="font-bold text-accent hover:underline">Common Mistakes People Make When Searching Court Records</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+              <div class="flex items-center gap-3 bg-gradient-to-br from-[#0b5a49] to-[#22b08a] px-6 py-5 text-white">
+                <span class="text-3xl" aria-hidden="true">🏠</span>
+                <h3 class="text-lg font-black leading-tight"><a href="/blog/category/property/" class="hover:underline">Property & Government Records</a></h3>
+              </div>
+              <div class="p-6">
+                <p class="text-sm leading-6 text-slate-600">Deeds and liens, county offices, FOIA requests, and state guides.</p>
+                <ul class="mt-4 space-y-2 text-sm">
+                  <li><a href="/blog/how-to-request-certified-copies-of-public-records/" class="font-bold text-accent hover:underline">How to Request Certified Copies of Public Records</a></li><li><a href="/blog/county-clerk-vs-recorder-vs-assessor-who-holds-which-records/" class="font-bold text-accent hover:underline">County Clerk vs. Recorder vs. Assessor: Who Holds Which Records?</a></li><li><a href="/blog/the-role-of-public-records-in-journalistic-investigations/" class="font-bold text-accent hover:underline">The Role of Public Records in Journalistic Investigations</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+              <div class="flex items-center gap-3 bg-gradient-to-br from-[#a3330b] to-[#ff7a3d] px-6 py-5 text-white">
+                <span class="text-3xl" aria-hidden="true">🛡️</span>
+                <h3 class="text-lg font-black leading-tight"><a href="/blog/category/safety/" class="hover:underline">Background & Safety</a></h3>
+              </div>
+              <div class="p-6">
+                <p class="text-sm leading-6 text-slate-600">Inmate searches, registries, background checks, and personal privacy.</p>
+                <ul class="mt-4 space-y-2 text-sm">
+                  <li><a href="/blog/protecting-your-privacy-when-searching-public-records/" class="font-bold text-accent hover:underline">Protecting Your Own Privacy When Searching Public Records</a></li><li><a href="/blog/navigating-the-national-sex-offender-public-website/" class="font-bold text-accent hover:underline">Navigating the National Sex Offender Public Website (NSOPW)</a></li><li><a href="/blog/difference-between-state-and-federal-inmate-searches/" class="font-bold text-accent hover:underline">The Critical Difference Between State and Federal Inmate Searches</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="directory" class="relative scroll-mt-16 overflow-hidden bg-[#071638] text-white">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(255,255,255,.14),transparent_28%),radial-gradient(circle_at_82%_8%,rgba(255,111,54,.16),transparent_24%)]"></div>
+    <div class="relative mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-[1.3fr_.7fr] lg:py-20">
+      <div>
+        <p class="mb-4 font-black uppercase tracking-[0.2em] text-accent">Free directory</p>
+        <h2 class="max-w-4xl text-4xl font-black leading-tight tracking-tight md:text-6xl">Search Public Records.<br /><span class="text-accent">Find What Matters.</span></h2>
+        <p class="mt-6 max-w-3xl text-xl leading-8 text-slate-200">Pick a state to open official business, court, bankruptcy, and incarceration search portals. We link to government sources and do not host the records.</p>
+        <div class="mt-8 flex flex-wrap gap-3 text-sm font-bold text-slate-200">
+          <span class="rounded-full border border-white/20 bg-white/10 px-4 py-2">50 State Directories</span>
+          <span class="rounded-full border border-white/20 bg-white/10 px-4 py-2">Official Sources</span>
+          <span class="rounded-full border border-white/20 bg-white/10 px-4 py-2">Privacy-Friendly</span>
+        </div>
+        <div class="mt-10 max-w-2xl rounded-3xl border border-white/25 bg-white p-6 shadow-2xl">
+          <label class="mb-3 block text-sm font-black uppercase tracking-[0.14em] text-slate-600">Select Your State</label>
+          <div class="grid gap-4 md:grid-cols-[1fr_260px]">
+            <div class="relative">
+              <select id="state-select" onchange="updateSections()" class="w-full appearance-none rounded-xl border border-slate-300 bg-white px-5 py-4 text-lg font-bold text-slate-900 outline-none focus:border-accent focus:ring-4 focus:ring-orange-100">
+                <option>All States</option>
+                <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option>
+                <option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Florida</option><option>Georgia</option>
+                <option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option>
+                <option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option>
+                <option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option>
+                <option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option>
+                <option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option>
+                <option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option>
+                <option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option>
+                <option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option>
+              </select>
+              <svg class="pointer-events-none absolute right-5 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </div>
+            <a href="#business" class="flex items-center justify-center rounded-xl bg-accent px-8 py-4 font-black text-white shadow-lg transition hover:bg-[#e55a25]">Show Options</a>
+          </div>
+        </div>
+        <div class="mt-8 grid gap-4 sm:grid-cols-3">
+          <a href="#business" class="block rounded-2xl border border-white/15 bg-[#13224d] p-4 text-left shadow-lg transition hover:border-accent hover:bg-[#1a2d63]">
+            <div class="text-base font-extrabold tracking-tight text-white">Florida Records</div>
+            <div class="mt-1 text-sm font-medium text-slate-300">Quick access</div>
+          </a>
+          <a href="#court" class="block rounded-2xl border border-white/15 bg-[#13224d] p-4 text-left shadow-lg transition hover:border-accent hover:bg-[#1a2d63]">
+            <div class="text-base font-extrabold tracking-tight text-white">California Courts</div>
+            <div class="mt-1 text-sm font-medium text-slate-300">Court records</div>
+          </a>
+          <a href="#business" class="block rounded-2xl border border-white/15 bg-[#13224d] p-4 text-left shadow-lg transition hover:border-accent hover:bg-[#1a2d63]">
+            <div class="text-base font-extrabold tracking-tight text-white">Texas Business Search</div>
+            <div class="mt-1 text-sm font-medium text-slate-300">Business search</div>
+          </a>
+        </div>
+      </div>
+      <div class="grid content-center gap-8">
+        <div class="space-y-6 pt-2">
+          <div class="flex items-start gap-4">
+            <svg class="mt-1 h-8 w-8 shrink-0 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+            <div><h3 class="text-xl font-black">Trusted & Secure</h3><p class="mt-2 text-base leading-7 text-slate-200">Official sources, state court systems, and privacy-friendly navigation.</p></div>
+          </div>
+          <div class="flex items-start gap-4">
+            <svg class="mt-1 h-8 w-8 shrink-0 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+            <div><h3 class="text-xl font-black">Official Sources</h3><p class="mt-2 text-base leading-7 text-slate-200">Government and court websites prioritized throughout the directory.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="border-b border-slate-200 bg-slate-50/70 py-10">
+    <div class="mx-auto max-w-7xl px-5">
+      <p class="font-black uppercase tracking-[0.18em] text-accent">Quick Access</p>
+      <h2 class="mt-2 text-3xl font-black">Quick Access by State</h2>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
+        <button onclick="selectState('Florida')" class="rounded-3xl border border-slate-200 bg-white p-5 text-left shadow-sm transition hover:border-accent hover:shadow-lg">
+          <div class="text-lg font-black">Florida</div>
+          <div class="mt-2 text-sm leading-6 text-slate-600">Popular public record searches</div>
+        </button>
+        <button onclick="selectState('California')" class="rounded-3xl border border-slate-200 bg-white p-5 text-left shadow-sm transition hover:border-accent hover:shadow-lg">
+          <div class="text-lg font-black">California</div>
+          <div class="mt-2 text-sm leading-6 text-slate-600">Popular public record searches</div>
+        </button>
+        <button onclick="selectState('Texas')" class="rounded-3xl border border-slate-200 bg-white p-5 text-left shadow-sm transition hover:border-accent hover:shadow-lg">
+          <div class="text-lg font-black">Texas</div>
+          <div class="mt-2 text-sm leading-6 text-slate-600">Popular public record searches</div>
+        </button>
+        <button onclick="selectState('New York')" class="rounded-3xl border border-slate-200 bg-white p-5 text-left shadow-sm transition hover:border-accent hover:shadow-lg">
+          <div class="text-lg font-black">New York</div>
+          <div class="mt-2 text-sm leading-6 text-slate-600">Popular public record searches</div>
+        </button>
+        <button onclick="selectState('Illinois')" class="rounded-3xl border border-slate-200 bg-white p-5 text-left shadow-sm transition hover:border-accent hover:shadow-lg">
+          <div class="text-lg font-black">Illinois</div>
+          <div class="mt-2 text-sm leading-6 text-slate-600">Popular public record searches</div>
+        </button>
+        <button onclick="selectState('Georgia')" class="rounded-3xl border border-slate-200 bg-white p-5 text-left shadow-sm transition hover:border-accent hover:shadow-lg">
+          <div class="text-lg font-black">Georgia</div>
+          <div class="mt-2 text-sm leading-6 text-slate-600">Popular public record searches</div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="business" class="relative mx-auto max-w-7xl overflow-hidden px-5 py-16">
+    <div class="pointer-events-none absolute -right-16 -top-16 h-72 w-72 rounded-full bg-orange-300/50 blur-3xl"></div>
+    <div class="relative z-10 mb-8">
+      <p class="font-black uppercase tracking-[0.2em] text-accent">Business records</p>
+      <h2 id="business-title" class="mt-2 text-4xl font-black">Business Entity Search by State</h2>
+      <p class="mt-3 max-w-3xl text-slate-600">Open official business entity search tools for LLCs, corporations, registered agents, and filings. Business entity searches are commonly used for due diligence, ownership verification, vendor checks, and researching active or dissolved companies.</p>
+      <div class="mt-5 flex flex-wrap gap-3 text-sm font-bold text-slate-600">
+        <span class="rounded-full bg-orange-50 px-4 py-2 text-accent">LLC Verification</span>
+        <span class="rounded-full bg-slate-100 px-4 py-2">Corporate Filings</span>
+        <span class="rounded-full bg-slate-100 px-4 py-2">Registered Agents</span>
+      </div>
+    </div>
+    <div class="relative z-10 grid gap-5 md:grid-cols-2">
+      <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 text-accent"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg></div>
+        <p id="biz-tag" class="mb-2 text-xs font-black uppercase tracking-[0.18em] text-accent">State required</p>
+        <h3 id="biz-card-title" class="text-lg font-black text-primary">Select a State First</h3>
+        <p id="biz-card-text" class="mt-2 text-sm leading-6 text-slate-600">Choose a state above to display the official business search link.</p>
+        <div id="biz-btn-wrap" class="mt-4 w-full"></div>
+      </article>
+      <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 text-accent"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg></div>
+        <h3 class="text-lg font-black text-primary">Business Filing Tips</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600">Search by exact name, partial name, officer, registered agent, or entity number when available.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="court" class="relative overflow-hidden border-y bg-gradient-to-b from-white to-slate-50 py-16">
+    <div class="pointer-events-none absolute -right-16 -top-16 h-72 w-72 rounded-full bg-slate-300/70 blur-3xl"></div>
+    <div class="relative z-10 mx-auto max-w-7xl px-5">
+      <p class="font-black uppercase tracking-[0.2em] text-accent">Lawsuit records</p>
+      <h2 id="court-title" class="mt-2 text-4xl font-black">Lawsuit Records by State and County</h2>
+      <p id="court-desc" class="mt-3 max-w-3xl text-slate-600">Select a state from the hero section above to load county court records. Most lawsuit and civil court searches begin with the county clerk or local court system.</p>
+      <div class="mt-5 flex flex-wrap gap-3 text-sm font-bold text-slate-600">
+        <span class="rounded-full bg-orange-50 px-4 py-2 text-accent">Civil Cases</span>
+        <span class="rounded-full bg-slate-100 px-4 py-2">Judgments</span>
+        <span class="rounded-full bg-slate-100 px-4 py-2">County Court Records</span>
+      </div>
+      <div class="mt-8 grid gap-5 lg:grid-cols-2">
+        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 text-accent"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg></div>
+          <p id="court-tag" class="mb-2 text-xs font-black uppercase tracking-[0.18em] text-accent">State required</p>
+          <h3 id="court-card-title" class="text-lg font-black text-primary">Select a State First</h3>
+          <p id="court-card-text" class="mt-2 text-sm leading-6 text-slate-600">Choose a state in the hero section above to load county lawsuit record options.</p>
+          <div id="court-btn-wrap" class="mt-4 w-full"></div>
+        </article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="mb-4 flex items-start gap-3">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-orange-50 text-accent"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg></div>
+            <div><p class="text-xs font-black uppercase tracking-[0.18em] text-accent">County lookup</p><h3 class="text-lg font-black text-primary">Choose County</h3><p class="mt-1 text-sm leading-6 text-slate-600">Most civil lawsuits and local court records are maintained at the county level.</p></div>
+          </div>
+          <select id="county-select" onchange="updateCountyLink()" disabled class="w-full rounded-xl border border-slate-300 px-4 py-4 font-bold outline-none disabled:bg-slate-100 disabled:text-slate-400">
+            <option>Select a state above first</option>
+          </select>
+          <div id="county-btn-wrap" class="mt-4 w-full"></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="bankruptcy" class="relative mx-auto max-w-7xl overflow-hidden px-5 py-16">
+    <div class="pointer-events-none absolute -right-16 -top-16 h-72 w-72 rounded-full bg-orange-300/50 blur-3xl"></div>
+    <div class="relative z-10">
+      <p class="font-black uppercase tracking-[0.2em] text-accent">Federal records</p>
+      <h2 class="mt-2 text-4xl font-black">Bankruptcy & Federal Case Search</h2>
+      <p class="mt-3 max-w-3xl text-slate-600">Search federal bankruptcy and court systems using PACER and related legal research tools. Bankruptcy filings are maintained in the federal court system and may include Chapter 7, Chapter 11, and Chapter 13 cases.</p>
+      <div class="mt-5 flex flex-wrap gap-3 text-sm font-bold text-slate-600">
+        <span class="rounded-full bg-orange-50 px-4 py-2 text-accent">Federal Court Records</span>
+        <span class="rounded-full bg-slate-100 px-4 py-2">Chapter 7 & 11</span>
+        <span class="rounded-full bg-slate-100 px-4 py-2">PACER Search</span>
+      </div>
+    </div>
+    <div class="relative z-10 mt-6 rounded-2xl border bg-white p-6 shadow-sm">
+      <div class="grid gap-3 md:grid-cols-[1fr_260px]">
+        <input id="pacer-name" placeholder="Person or business name" class="min-w-0 rounded-xl border px-4 py-4 outline-none" />
+        <a id="pacer-btn" href="https://pcl.uscourts.gov/pcl/index.jsf" target="_blank" class="flex min-h-[58px] w-full cursor-pointer items-center justify-center gap-3 rounded-xl bg-accent px-6 py-4 text-center text-sm font-black text-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">Continue to PACER <svg class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a>
+      </div>
+      <div id="pacer-hint" class="mt-4 hidden rounded-xl bg-orange-50 p-4 font-bold"></div>
+      <p class="mt-3 text-xs text-slate-500">This field is a scratchpad. The official federal court site does not accept pre-filled searches, so use the button to open it and enter the name there.</p>
+    </div>
+    <div class="relative z-10 mt-8 grid items-stretch gap-5 md:grid-cols-3">
+      <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 text-accent"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg></div>
+        <p class="mb-2 text-xs font-black uppercase tracking-[0.18em] text-accent">Free research</p>
+        <h3 class="text-lg font-black text-primary">CourtListener</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600">Free federal court opinions, RECAP archives, and docket research tools.</p>
+        <div class="mt-4 w-full"><a href="https://www.courtlistener.com/" target="_blank" class="flex min-h-[58px] w-full cursor-pointer items-center justify-center gap-3 rounded-xl bg-accent px-6 py-4 text-center text-sm font-black text-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">Continue <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a></div>
+      </article>
+      <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 text-accent"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg></div>
+        <p class="mb-2 text-xs font-black uppercase tracking-[0.18em] text-accent">Premium analytics</p>
+        <h3 class="text-lg font-black text-primary">Docket Alarm</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600">Advanced litigation analytics, federal court dockets, and legal intelligence tools.</p>
+        <div class="mt-4 w-full"><a href="https://www.docketalarm.com/" target="_blank" class="flex min-h-[58px] w-full cursor-pointer items-center justify-center gap-3 rounded-xl bg-accent px-6 py-4 text-center text-sm font-black text-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">Continue <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a></div>
+      </article>
+      <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 text-accent"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg></div>
+        <p class="mb-2 text-xs font-black uppercase tracking-[0.18em] text-accent">Legal intelligence</p>
+        <h3 class="text-lg font-black text-primary">UniCourt</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600">Enterprise court analytics, litigation tracking, and federal docket intelligence platform.</p>
+        <div class="mt-4 w-full"><a href="https://unicourt.com/" target="_blank" class="flex min-h-[58px] w-full cursor-pointer items-center justify-center gap-3 rounded-xl bg-accent px-6 py-4 text-center text-sm font-black text-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">Continue <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="inmates" class="relative overflow-hidden border-y bg-gradient-to-b from-white to-slate-50 py-16">
+    <div class="pointer-events-none absolute -right-16 -top-16 h-72 w-72 rounded-full bg-slate-300/70 blur-3xl"></div>
+    <div class="relative z-10 mx-auto max-w-7xl px-5">
+      <p class="font-black uppercase tracking-[0.2em] text-accent">Incarceration records</p>
+      <h2 class="mt-2 text-4xl font-black">Incarceration Records</h2>
+      <p id="inmate-desc" class="mt-3 max-w-3xl text-slate-600">Select a state above to load state incarceration records, or use the federal inmate locator below. State and federal inmate systems are maintained separately.</p>
+      <div class="mt-5 flex flex-wrap gap-3 text-sm font-bold text-slate-600">
+        <span class="rounded-full bg-orange-50 px-4 py-2 text-accent">State Corrections</span>
+        <span class="rounded-full bg-slate-100 px-4 py-2">Federal Inmates</span>
+        <span class="rounded-full bg-slate-100 px-4 py-2">County Jail Records</span>
+      </div>
+      <div class="mt-6 rounded-2xl border bg-white p-6 shadow-sm">
+        <div class="grid gap-3 md:grid-cols-[1fr_260px]">
+          <input id="inmate-name" placeholder="First and last name" class="rounded-xl border px-4 py-4 outline-none" />
+          <a id="inmate-btn" href="https://www.usa.gov/state-corrections" target="_blank" class="flex min-h-[58px] w-full cursor-pointer items-center justify-center gap-3 rounded-xl bg-accent px-6 py-4 text-center text-sm font-black text-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">Open State Directory <svg class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a>
+        </div>
+        <p class="mt-3 text-xs text-slate-500">This field is a scratchpad. Official corrections sites do not accept pre-filled searches, so use the button to open the official site and enter the name there.</p>
+      </div>
+      <div class="mt-8 grid gap-5 md:grid-cols-2">
+        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 text-accent"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg></div>
+          <h3 class="text-lg font-black text-primary">Federal Inmate Locator</h3>
+          <p class="mt-2 text-sm leading-6 text-slate-600">Search Bureau of Prisons records for federal inmates, federal convictions, and U.S. federal custody records.</p>
+          <div class="mt-4 w-full"><a href="https://www.bop.gov/inmateloc/" target="_blank" class="flex min-h-[58px] w-full cursor-pointer items-center justify-center gap-3 rounded-xl bg-accent px-6 py-4 text-center text-sm font-black text-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">Continue <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a></div>
+        </article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 text-accent"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg></div>
+          <h3 class="text-lg font-black text-primary">County Jail Directory</h3>
+          <p class="mt-2 text-sm leading-6 text-slate-600">Search county jail rosters, sheriff inmate databases, and local detention records by county or sheriff office.</p>
+          <div class="mt-4 w-full"><a href="https://www.usa.gov/local-governments" target="_blank" class="flex min-h-[58px] w-full cursor-pointer items-center justify-center gap-3 rounded-xl bg-accent px-6 py-4 text-center text-sm font-black text-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">Continue <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-5 py-16">
+    <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm md:p-12">
+      <p class="font-black uppercase tracking-[0.18em] text-accent">User Guide</p>
+      <h2 class="mt-2 text-3xl font-black text-primary md:text-4xl">How to Use the RecordWatchdog Public Records Directory</h2>
+      <div class="mt-6 space-y-6 text-base leading-8 text-slate-700">
+        <p>RecordWatchdog is designed to simplify the process of finding official public records across the United States. Navigating disparate government websites can be confusing and time-consuming. Our directory organizes over 50 state-level resources, county court systems, and federal databases into one streamlined, easy-to-use platform, saving you hours of research.</p>
+        <div class="grid gap-6 md:grid-cols-3">
+          <div class="rounded-2xl bg-slate-50 p-6">
+            <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-accent font-black text-white">1</div>
+            <h3 class="text-lg font-black text-primary">Select Your State</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Use the dropdown menu at the top of this page to choose the specific state you are researching. This instantly filters our directory to show only relevant, official resources for that jurisdiction.</p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 p-6">
+            <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-accent font-black text-white">2</div>
+            <h3 class="text-lg font-black text-primary">Choose Your Record Type</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Navigate to the specific section you need, such as Business Entity Search, County Lawsuit Records, Incarceration Databases, or Bankruptcy Filings.</p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 p-6">
+            <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-accent font-black text-white">3</div>
+            <h3 class="text-lg font-black text-primary">Access Official Sources</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Click the provided buttons to be directed securely to the official government portal (e.g., Secretary of State, County Clerk, or Department of Corrections) to perform your search.</p>
+          </div>
+        </div>
+        <div class="mt-4 rounded-2xl border border-orange-200 bg-orange-50 p-6">
+          <h3 class="flex items-center gap-2 text-lg font-black text-primary"><svg class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Important Transparency & FCRA Disclaimer</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-700">RecordWatchdog is strictly an informational directory and search tool aggregator. <strong>We do not host, generate, or maintain any criminal records, court documents, inmate databases, or personal data on our servers.</strong> All searches are conducted on third-party official government websites. Furthermore, this site is <strong>not</strong> a "consumer reporting agency" as defined by the Fair Credit Reporting Act (FCRA). The information provided here may not be used for tenant screening, employment background checks, credit eligibility decisions, or any other FCRA-regulated purpose.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-5 py-16">
+    <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm md:p-12">
+      <p class="font-black uppercase tracking-[0.18em] text-accent">Our Value</p>
+      <h2 class="mt-2 text-3xl font-black text-primary md:text-4xl">Why Choose RecordWatchdog?</h2>
+      <div class="mt-8 grid gap-8 md:grid-cols-2">
+        <div>
+          <h3 class="text-xl font-black text-primary">A Curated Directory of Official Sources</h3>
+          <p class="mt-3 text-base leading-7 text-slate-700">Navigating the fragmented landscape of U.S. public records can be overwhelming. RecordWatchdog saves you hours of research by curating direct links to over 50 state-level resources, hundreds of county court systems, and federal databases. We aim to link to official government and court websites, and any third-party research tool we include is clearly labeled, protecting you from predatory third-party "people search" sites that charge hidden fees for freely available public data.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-black text-primary">Empowering Informed Decisions</h3>
+          <p class="mt-3 text-base leading-7 text-slate-700">Whether you are a small business owner verifying a new vendor's LLC status, a homeowner researching property liens, or a concerned parent checking local safety registries, access to accurate public information is your right. We provide the roadmap to that information, complete with step-by-step guides on how to interpret docket sheets, understand bankruptcy chapters, and conduct lawful due diligence.</p>
+        </div>
+      </div>
+      <div class="mt-8 rounded-2xl bg-slate-50 p-6">
+        <h3 class="text-lg font-black text-primary">Types of Public Records We Help You Find:</h3>
+        <ul class="mt-4 grid gap-3 sm:grid-cols-2">
+          <li class="flex items-start gap-3 text-sm leading-6 text-slate-700"><span class="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent"></span><strong>Business Entity Filings:</strong> LLCs, Corporations, Registered Agents, and Good Standing certificates.</li>
+          <li class="flex items-start gap-3 text-sm leading-6 text-slate-700"><span class="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent"></span><strong>Civil & Criminal Court Records:</strong> County-level lawsuit dockets, judgments, and case dispositions.</li>
+          <li class="flex items-start gap-3 text-sm leading-6 text-slate-700"><span class="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent"></span><strong>Incarceration & Jail Rosters:</strong> State Department of Corrections inmate locators and county jail databases.</li>
+          <li class="flex items-start gap-3 text-sm leading-6 text-slate-700"><span class="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent"></span><strong>Federal Bankruptcy Filings:</strong> Chapter 7, 11, and 13 records via the official PACER system.</li>
+          <li class="flex items-start gap-3 text-sm leading-6 text-slate-700"><span class="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent"></span><strong>Property & Real Estate:</strong> County assessor values, deed histories, and tax lien records.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-5 py-16">
+    <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm md:p-12">
+      <p class="font-black uppercase tracking-[0.18em] text-accent">FAQ</p>
+      <h2 class="mt-2 text-3xl font-black text-primary md:text-4xl">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-6">
+        <div class="rounded-2xl bg-slate-50 p-6">
+          <h3 class="text-lg font-black text-primary">Is RecordWatchdog free to use?</h3>
+          <p class="mt-2 text-sm leading-7 text-slate-700">Yes, our directory is completely free. We provide direct links to official government portals. While our site is free, some official government databases may charge a small fee for downloading certified copies of documents.</p>
+        </div>
+        <div class="rounded-2xl bg-slate-50 p-6">
+          <h3 class="text-lg font-black text-primary">Do you host criminal records or personal data?</h3>
+          <p class="mt-2 text-sm leading-7 text-slate-700">No. RecordWatchdog is strictly an informational directory. We do not host, generate, or maintain any criminal records, court documents, inmate databases, or personal data on our servers. All searches redirect you to official, secure government websites.</p>
+        </div>
+        <div class="rounded-2xl bg-slate-50 p-6">
+          <h3 class="text-lg font-black text-primary">Can I use this site for employment background checks?</h3>
+          <p class="mt-2 text-sm leading-7 text-slate-700">No. RecordWatchdog is NOT a "consumer reporting agency" as defined by the Fair Credit Reporting Act (FCRA). Our resources may not be used for tenant screening, employment background checks, credit eligibility decisions, or any other FCRA-regulated purpose.</p>
+        </div>
+        <div class="rounded-2xl bg-slate-50 p-6">
+          <h3 class="text-lg font-black text-primary">Why do some county searches require a visit to the courthouse?</h3>
+          <p class="mt-2 text-sm leading-7 text-slate-700">While many counties offer robust online databases, some smaller jurisdictions have not fully digitized their historical records. In these cases, you may need to visit the county clerk's office in person or submit a formal written request to access older files.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-5 py-14">
+    <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+      <p class="font-black uppercase tracking-[0.18em] text-accent">Quick Links</p>
+      <h2 class="mt-2 text-4xl font-black">Quick Links</h2>
+      <div class="mt-5 flex flex-wrap gap-3">
+        <a href="#business" class="inline-block rounded-full border border-slate-300 bg-slate-50 px-4 py-2 text-sm font-bold text-slate-700 transition hover:border-accent hover:bg-orange-50 hover:text-accent">Florida Public Records</a>
+        <a href="#court" class="inline-block rounded-full border border-slate-300 bg-slate-50 px-4 py-2 text-sm font-bold text-slate-700 transition hover:border-accent hover:bg-orange-50 hover:text-accent">California Court Records</a>
+        <a href="#business" class="inline-block rounded-full border border-slate-300 bg-slate-50 px-4 py-2 text-sm font-bold text-slate-700 transition hover:border-accent hover:bg-orange-50 hover:text-accent">Texas Business Search</a>
+        <a href="#inmates" class="inline-block rounded-full border border-slate-300 bg-slate-50 px-4 py-2 text-sm font-bold text-slate-700 transition hover:border-accent hover:bg-orange-50 hover:text-accent">New York Inmate Search</a>
+        <a href="#court" class="inline-block rounded-full border border-slate-300 bg-slate-50 px-4 py-2 text-sm font-bold text-slate-700 transition hover:border-accent hover:bg-orange-50 hover:text-accent">Illinois Court Search</a>
+        <a href="#business" class="inline-block rounded-full border border-slate-300 bg-slate-50 px-4 py-2 text-sm font-bold text-slate-700 transition hover:border-accent hover:bg-orange-50 hover:text-accent">Georgia Business Entity Search</a>
+        <a href="#business" class="inline-block rounded-full border border-slate-300 bg-slate-50 px-4 py-2 text-sm font-bold text-slate-700 transition hover:border-accent hover:bg-orange-50 hover:text-accent">Delaware LLC Search</a>
+        <a href="#inmates" class="inline-block rounded-full border border-slate-300 bg-slate-50 px-4 py-2 text-sm font-bold text-slate-700 transition hover:border-accent hover:bg-orange-50 hover:text-accent">Florida Arrest Records</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  var stateBizUrls = {Alabama:'https://arc-sos.state.al.us/CGI/CORPNAME.MBR/INPUT',Alaska:'https://www.commerce.alaska.gov/cbp/main/search/entities',Arizona:'https://ecorp.azcc.gov/EntitySearch/Index',Arkansas:'https://www.sos.arkansas.gov/corps/search_all.php',California:'https://bizfileonline.sos.ca.gov/search/business',Colorado:'https://www.sos.state.co.us/biz/BusinessEntityCriteriaExt.do',Connecticut:'https://service.ct.gov/business/s/onlinebusinesssearch',Delaware:'https://icis.corp.delaware.gov/Ecorp/EntitySearch/NameSearch.aspx',Florida:'https://search.sunbiz.org/Inquiry/CorporationSearch/ByName',Georgia:'https://ecorp.sos.ga.gov/BusinessSearch',Hawaii:'https://hbe.ehawaii.gov/documents/search.html',Idaho:'https://sosbiz.idaho.gov/search/business',Illinois:'https://apps.ilsos.gov/businessentitysearch/',Indiana:'https://bsd.sos.in.gov/publicbusinesssearch',Iowa:'https://sos.iowa.gov/search/business/search.aspx',Kansas:'https://www.kansas.gov/bess/flow/main?execution=e1s1',Kentucky:'https://web.sos.ky.gov/ftsearch/',Louisiana:'https://coraweb.sos.la.gov/commercialsearch/commercialsearch.aspx',Maine:'https://icrs.informe.org/nei-sos-icrs/ICRS?MainPage=x',Maryland:'https://egov.maryland.gov/BusinessExpress/EntitySearch',Massachusetts:'https://corp.sec.state.ma.us/corpweb/CorpSearch/CorpSearch.aspx',Michigan:'https://cofs.lara.state.mi.us/SearchApi/Search/Search',Minnesota:'https://mblsportal.sos.state.mn.us/Business/Search',Mississippi:'https://businesssearch.sos.ms.gov/corp/soskb/csearch.asp',Missouri:'https://bsd.sos.mo.gov/BusinessEntity/BESearch.aspx',Montana:'https://biz.sosmt.gov/search/business',Nebraska:'https://www.nebraska.gov/sos/corp/corpsearch.cgi',Nevada:'https://esos.nv.gov/EntitySearch/OnlineEntitySearch','New Hampshire':'https://quickstart.sos.nh.gov/online/BusinessInquire','New Jersey':'https://www.njportal.com/DOR/BusinessNameSearch/Search/BusinessName','New Mexico':'https://portal.sos.state.nm.us/BFS/online/CorporationBusinessSearch','New York':'https://apps.dos.ny.gov/publicInquiry/','North Carolina':'https://www.sosnc.gov/online_services/search/by_title/_Business_Registration','North Dakota':'https://firststop.sos.nd.gov/search/business',Ohio:'https://businesssearch.ohiosos.gov/',Oklahoma:'https://www.sos.ok.gov/corp/corpInquiryFind.aspx',Oregon:'https://sos.oregon.gov/business/Pages/find.aspx',Pennsylvania:'https://file.dos.pa.gov/search/business','Rhode Island':'https://business.sos.ri.gov/CorpWeb/CorpSearch/CorpSearch.aspx','South Carolina':'https://businessfilings.sc.gov/BusinessFiling/Entity/Search','South Dakota':'https://sosenterprise.sd.gov/BusinessServices/Business/FilingSearch.aspx',Tennessee:'https://tnbear.tn.gov/Ecommerce/FilingSearch.aspx',Texas:'https://mycpa.cpa.state.tx.us/coa/',Utah:'https://secure.utah.gov/bes/',Vermont:'https://bizfilings.vermont.gov/online/BusinessInquire',Virginia:'https://cis.scc.virginia.gov/EntitySearch/Index',Washington:'https://ccfs.sos.wa.gov/#/BusinessSearch','West Virginia':'https://apps.sos.wv.gov/business/corporations/',Wisconsin:'https://www.wdfi.org/apps/CorpSearch/Search.aspx',Wyoming:'https://wyobiz.wyo.gov/Business/FilingSearch.aspx'};
+  var stateCourtUrls = {Alabama:'https://judicial.alabama.gov/',Alaska:'https://courts.alaska.gov/',Arizona:'https://www.azcourts.gov/',Arkansas:'https://arcourts.gov/',California:'https://www.courts.ca.gov/find-my-court.htm',Colorado:'https://www.courts.state.co.us/',Connecticut:'https://jud.ct.gov/',Delaware:'https://courts.delaware.gov/',Florida:'https://www.flcourts.gov/',Georgia:'https://georgiacourts.gov/',Hawaii:'https://www.courts.state.hi.us/',Idaho:'https://isc.idaho.gov/',Illinois:'https://www.illinoiscourts.gov/',Indiana:'https://www.in.gov/courts/',Iowa:'https://www.iowacourts.gov/',Kansas:'https://www.kscourts.org/',Kentucky:'https://kycourts.gov/',Louisiana:'https://www.lasc.org/',Maine:'https://www.courts.maine.gov/',Maryland:'https://www.courts.state.md.us/',Massachusetts:'https://www.mass.gov/orgs/massachusetts-court-system',Michigan:'https://www.courts.michigan.gov/',Minnesota:'https://www.mncourts.gov/',Mississippi:'https://courts.ms.gov/',Missouri:'https://www.courts.mo.gov/',Montana:'https://courts.mt.gov/',Nebraska:'https://supremecourt.nebraska.gov/',Nevada:'https://nvcourts.gov/','New Hampshire':'https://www.courts.nh.gov/','New Jersey':'https://www.njcourts.gov/','New Mexico':'https://www.nmcourts.gov/','New York':'https://www.nycourts.gov/','North Carolina':'https://www.nccourts.gov/','North Dakota':'https://www.ndcourts.gov/',Ohio:'https://www.supremecourt.ohio.gov/',Oklahoma:'https://www.oscn.net/',Oregon:'https://www.courts.oregon.gov/',Pennsylvania:'https://www.pacourts.us/','Rhode Island':'https://www.courts.ri.gov/','South Carolina':'https://www.sccourts.org/','South Dakota':'https://ujs.sd.gov/',Tennessee:'https://www.tncourts.gov/',Texas:'https://www.txcourts.gov/',Utah:'https://www.utcourts.gov/',Vermont:'https://www.vermontjudiciary.org/',Virginia:'https://www.vacourts.gov/',Washington:'https://www.courts.wa.gov/','West Virginia':'https://www.courtswv.gov/',Wisconsin:'https://www.wicourts.gov/',Wyoming:'https://www.courts.state.wy.us/'};
+  var countyData = {'New York':[['Albany County','https://iapps.courts.state.ny.us/nyscef/CaseSearch?task=new'],['Bronx County','https://iapps.courts.state.ny.us/nyscef/CaseSearch?task=new'],['Kings County','https://iapps.courts.state.ny.us/nyscef/CaseSearch?task=new'],['Nassau County','https://iapps.courts.state.ny.us/nyscef/CaseSearch?task=new'],['New York County','https://iapps.courts.state.ny.us/nyscef/CaseSearch?task=new'],['Queens County','https://iapps.courts.state.ny.us/nyscef/CaseSearch?task=new'],['Richmond County','https://iapps.courts.state.ny.us/nyscef/CaseSearch?task=new'],['Suffolk County','https://iapps.courts.state.ny.us/nyscef/CaseSearch?task=new'],['Westchester County','https://iapps.courts.state.ny.us/nyscef/CaseSearch?task=new']],'Florida':[['Miami-Dade County','https://www2.miamidadeclerk.gov/ocs/'],['Broward County','https://www.browardclerk.org/web2'],['Orange County','https://myeclerk.myorangeclerk.com/'],['Palm Beach County','https://appsgp.mypalmbeachclerk.com/eCaseView/']],'California':[['Los Angeles County','https://www.lacourt.ca.gov/pages/lp/access-a-case/tp/find-case-information/cp/os-civil-case-access']],'Texas':[['Harris County','https://www.hcdistrictclerk.com/edocs/public/search.aspx'],['Dallas County','https://courtsportal.dallascounty.org/DALLASPROD']],'Illinois':[['Cook County','https://www.cookcountyclerkofcourt.org/online-case-information']],'Nevada':[['Clark County','https://www.clarkcountycourts.us/Portal/']]};
+  var inmateByState = {California:'https://ciris.mt.cdcr.ca.gov/',Florida:'https://pubapps.fdc.myflorida.com/OffenderSearch/Search.aspx?TypeSearch=AI',Illinois:'https://idoc.illinois.gov/offender/inmatesearch.html','New York':'https://nysdoccslookup.doccs.ny.gov/',Texas:'https://inmate.tdcj.texas.gov/InmateSearch/start.action'};
+  var defaultCourtUrl = 'https://www.ncsc.org/information-and-resources/state-court-websites';
+  function selectState(name) { var s = document.getElementById('state-select'); s.value = name; updateSections(); document.getElementById('business').scrollIntoView({behavior:'smooth'}); }
+  function updateSections() {
+    var state = document.getElementById('state-select').value;
+    var hasState = state !== 'All States';
+    var bizUrl = stateBizUrls[state] || 'https://www.usa.gov/business';
+    var courtUrl = stateCourtUrls[state] || defaultCourtUrl;
+    var inmateUrl = hasState && inmateByState[state] ? inmateByState[state] : 'https://www.usa.gov/state-corrections';
+    document.getElementById('business-title').textContent = hasState ? state + ' Business Entity Search' : 'Business Entity Search by State';
+    document.getElementById('biz-tag').textContent = hasState ? 'Official source' : 'State required';
+    document.getElementById('biz-card-title').textContent = hasState ? state + ' Entity Search' : 'Select a State First';
+    document.getElementById('biz-card-text').textContent = hasState ? 'Look up official Secretary of State business filings.' : 'Choose a state above to display the official business search link.';
+    document.getElementById('biz-btn-wrap').innerHTML = hasState ? '<a href="'+bizUrl+'" target="_blank" class="flex min-h-[58px] w-full items-center justify-center gap-3 rounded-xl bg-accent px-6 py-4 text-center text-sm font-black text-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">Open Search <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></a>' : '';
+    document.getElementById('court-title').textContent = hasState ? state + ' Lawsuit Records' : 'Lawsuit Records by State and County';
+    document.getElementById('court-desc').textContent = hasState ? 'Choose a county within ' + state + ' to open lawsuit and civil case lookup tools. Most civil lawsuits, judgments, and local court filings are managed at the county level.' : 'Select a state from the hero section above to load county court records. Most lawsuit and civil court searches begin with the county clerk or local court system.';
+    document.getElementById('court-tag').textContent = hasState ? 'Lawsuit source' : 'State required';
+    document.getElementById('court-card-title').textContent = hasState ? state + ' Court Directory' : 'Select a State First';
+    document.getElementById('court-card-text').textContent = hasState ? 'Use official court and clerk resources for lawsuit and civil case records.' : 'Choose a state in the hero section above to load county lawsuit record options.';
+    document.getElementById('court-btn-wrap').innerHTML = hasState ? '<a href="'+courtUrl+'" target="_blank" class="flex min-h-[58px] w-full items-center justify-center gap-3 rounded-xl bg-accent px-6 py-4 text-center text-sm font-black text-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">Court Directory <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></a>' : '';
+    var cs = document.getElementById('county-select');
+    var counties = countyData[state] || [];
+    cs.innerHTML = '<option>' + (hasState ? 'Select County' : 'Select a state above first') + '</option>';
+    counties.forEach(function(c) { cs.innerHTML += '<option>' + c[0] + '</option>'; });
+    cs.disabled = !hasState;
+    updateCountyLink();
+    document.getElementById('inmate-desc').textContent = hasState ? 'Search ' + state + ' correctional records or federal inmate custody records using official incarceration databases. State systems usually track prison inmates, while county jail systems may maintain separate local detention records.' : 'Select a state above to load state incarceration records, or use the federal inmate locator below. State and federal inmate systems are maintained separately.';
+    document.getElementById('inmate-btn').href = inmateUrl;
+    document.getElementById('inmate-btn').innerHTML = (hasState ? 'Open ' + state + ' Search' : 'Open State Directory') + ' <svg class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>';
+  }
+  function updateCountyLink() {
+    var state = document.getElementById('state-select').value;
+    var countyName = document.getElementById('county-select').value;
+    var counties = countyData[state] || [];
+    var found = counties.find(function(c) { return c[0] === countyName; });
+    var courtUrl = stateCourtUrls[state] || defaultCourtUrl;
+    var url = found ? found[1] : courtUrl;
+    var label = found ? 'Open Lawsuit Search' : 'Court Directory';
+    document.getElementById('county-btn-wrap').innerHTML = '<a href="'+url+'" target="_blank" class="flex min-h-[58px] w-full items-center justify-center gap-3 rounded-xl bg-accent px-6 py-4 text-center text-sm font-black text-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">'+label+' <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></a>';
+  }
+  document.getElementById('pacer-name').addEventListener('input', function() {
+    var hint = document.getElementById('pacer-hint');
+    if (this.value.trim()) { hint.textContent = 'Suggested search term: ' + this.value; hint.classList.remove('hidden'); }
+    else { hint.classList.add('hidden'); }
+  });
+  </script>
+
+  </main>
+  <footer class="bg-[#071638] px-5 py-10 text-white">
+    <div class="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
+      <a href="/" class="flex items-center gap-2">
+        <img src="/recordwatchdog-logo.png" alt="RecordWatchdog" class="h-auto min-w-[150px] max-w-[160px] object-contain" loading="lazy" decoding="async" />
+      </a>
+      <div class="flex flex-wrap gap-5 text-sm font-bold text-slate-300">
+        <a href="/about/" class="transition hover:text-white">About</a>
+        <a href="/blog/" class="transition hover:text-white">Guides</a>
+        <a href="/start-here/" class="transition hover:text-white">Start Here</a>
+        <a href="/glossary/" class="transition hover:text-white">Glossary</a>
+        <a href="/tools/" class="transition hover:text-white">Tools</a>
+        <a href="/privacy-policy/" class="transition hover:text-white">Privacy Policy</a>
+        <a href="/cookie-policy/" class="transition hover:text-white">Cookie Policy</a>
+        <a href="/terms/" class="transition hover:text-white">Terms</a>
+        <a href="/faq/" class="transition hover:text-white">FAQ</a>
+        <a href="/contact/" class="transition hover:text-white">Contact</a>
+        <a href="/dmca/" class="transition hover:text-white">DMCA</a>
+      </div>
+    </div>
+    <div class="mx-auto mt-8 max-w-7xl border-t border-white/10 pt-6 text-center text-xs text-slate-400">
+      <p>&copy; 2026 RecordWatchdog. All rights reserved.</p>
+      <p class="mt-2">RecordWatchdog is an independent website. It is not affiliated with, endorsed by, or operated by any government agency or court, and it is not a consumer reporting agency. We link to official sources and do not provide legal advice.</p>
+    </div>
+  </footer>
+  <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[100] border-t border-slate-200 bg-white p-4 shadow-2xl sm:p-6">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
+      <div class="text-center sm:text-left">
+        <p class="text-sm font-bold text-primary">We value your privacy</p>
+        <p class="mt-1 text-sm text-slate-600">We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. Read our <a href="/privacy-policy/" class="font-bold text-accent underline">Privacy Policy</a>.</p>
+      </div>
+      <div class="flex shrink-0 gap-3">
+        <button onclick="acceptCookies()" class="rounded-lg bg-primary px-6 py-2.5 text-sm font-bold text-white transition hover:bg-[#1a2a5e]">Accept All</button>
+        <a href="/privacy-policy/" class="rounded-lg border border-slate-300 px-6 py-2.5 text-sm font-bold text-slate-700 transition hover:bg-slate-50">Customize</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    // If user already accepted, hide the banner immediately on load
+    if (localStorage.getItem('cookieConsent') === 'true') {
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    function acceptCookies() { 
+      localStorage.setItem('cookieConsent', 'true'); 
+      document.getElementById('cookie-banner').style.display = 'none'; 
+      if (typeof gtag === 'function') {
+        gtag('consent', 'update', { 'ad_storage': 'granted', 'ad_user_data': 'granted', 'ad_personalization': 'granted', 'analytics_storage': 'granted' });
+      }
+    }
+  </script>
+</body>
+</html>

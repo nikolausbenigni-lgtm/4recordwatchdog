@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Public Records Tools: Office Finder & Request Letter Builder | RecordWatchdog</title>
+  <meta name="description" content="Free tools for public records research: find which office holds a record and build a FOIA or state public records request letter." />
+  <meta name="robots" content="index, follow" />
+  <meta name="google-site-verification" content="_39_XmfiyJvFJbEm7OP2tx2A-0WWIGn6_HOvqyOv5gw" />
+  <link rel="canonical" href="https://recordwatchdog.com/tools/" />
+  <link rel="icon" type="image/png" href="/recordwatchdog-logo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Free Public Records Tools: Office Finder & Request Letter Builder | RecordWatchdog" />
+  <meta property="og:description" content="Free tools for public records research: find which office holds a record and build a FOIA or state public records request letter." />
+  <meta property="og:image" content="https://recordwatchdog.com/images/og/default.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Free Public Records Tools: Office Finder & Request Letter Builder | RecordWatchdog" />
+  <meta property="twitter:description" content="Free tools for public records research: find which office holds a record and build a FOIA or state public records request letter." />
+  <meta property="twitter:image" content="https://recordwatchdog.com/images/og/default.jpg" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://cdn.tailwindcss.com https://pagead2.googlesyndication.com https://*.adtrafficquality.google https://www.googletagservices.com https://partner.googleadservices.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: http: blob:; font-src 'self' https://fonts.gstatic.com; frame-src https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://bid.g.doubleclick.net https://*.googlesyndication.com https://*.google.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://pagead2.googlesyndication.com https://*.adtrafficquality.google;" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7ZXH6EXHV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    // Consent Mode: analytics and ad storage stay off until the visitor clicks Accept All.
+    gtag('consent', 'default', { 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied', 'analytics_storage': 'denied' });
+    try {
+      if (localStorage.getItem('cookieConsent') === 'true') {
+        gtag('consent', 'update', { 'ad_storage': 'granted', 'ad_user_data': 'granted', 'ad_personalization': 'granted', 'analytics_storage': 'granted' });
+      }
+    } catch (e) {}
+    gtag('js', new Date());
+    gtag('config', 'G-Q7ZXH6EXHV');
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { primary: '#101943', accent: '#ff6f36' } } } }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .prose h2 { font-size: 1.5rem; font-weight: 800; color: #101943; margin-top: 2rem; margin-bottom: 1rem; }
+    .prose p { margin-bottom: 1rem; line-height: 1.75; color: #334155; }
+    .prose ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem; color: #334155; }
+    .prose li { margin-bottom: 0.5rem; }
+    .prose h2[id] { scroll-margin-top: 6rem; }
+    .article-hero { margin: 1.75rem 0 0; }
+    .article-hero img { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 420; object-fit: cover; border-radius: 1.25rem; background: #e2e8f0; }
+    .mid-figure img { aspect-ratio: 1200 / 240; object-fit: cover; border: 0; }
+    .mid-figure figcaption { font-size: 0.95rem; color: #334155; }
+    .guide-figure { margin: 2rem 0; }
+    .guide-figure img { display: block; width: 100%; height: auto; border: 1px solid #e2e8f0; border-radius: 1rem; background: #fff; }
+    .guide-figure figcaption { margin-top: 0.6rem; text-align: center; font-size: 0.85rem; color: #64748b; }
+    .prose ol { list-style-type: decimal; padding-left: 1.5rem; margin-bottom: 1rem; color: #334155; }
+    .prose strong { color: #101943; }
+  </style>
+</head>
+<body class="min-h-screen bg-slate-50 text-primary flex flex-col font-sans">
+  <div class="sticky top-0 z-50 bg-white/95 shadow-sm backdrop-blur-sm">
+    <header class="border-b border-slate-100">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-5 px-5 py-1.5">
+        <a href="/" class="flex items-center gap-2 group leading-none">
+          <img src="/recordwatchdog-logo.png" alt="RecordWatchdog" class="h-auto min-w-[150px] max-w-[160px] object-contain" loading="lazy" decoding="async" />
+        </a>
+      <nav class="hidden xl:block flex-1">
+        <ul class="flex items-center justify-end gap-6 text-sm font-bold">
+          <li><a href="/" class="transition hover:text-accent">Home</a></li>
+          <li><a href="/about/" class="transition hover:text-accent">About</a></li>
+          <li><a href="/blog/" class="transition hover:text-accent">Guides</a></li>
+          <li><a href="/#directory" class="transition hover:text-accent">Directory</a></li>
+          <li><a href="/tools/" class="transition hover:text-accent">Tools</a></li>
+          <li><a href="/faq/" class="transition hover:text-accent">FAQ</a></li>
+          <li><a href="/contact/" class="transition hover:text-accent">Contact</a></li>
+        </ul>
+      </nav>
+      </div>
+    </header>
+    <div class="border-b border-slate-200 bg-slate-50/80 py-3">
+      <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 sm:flex-row">
+        <h3 class="text-xs font-black uppercase tracking-wider text-primary">Search Public Records:</h3>
+        <div class="flex flex-wrap justify-center gap-2">
+          <a href="/#business" class="flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-primary shadow-sm transition hover:border-accent hover:bg-orange-50 hover:text-accent">
+            <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg> Business
+          </a>
+          <a href="/#court" class="flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-primary shadow-sm transition hover:border-accent hover:bg-orange-50 hover:text-accent">
+            <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg> Lawsuits
+          </a>
+          <a href="/#inmates" class="flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-primary shadow-sm transition hover:border-accent hover:bg-orange-50 hover:text-accent">
+            <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg> Incarceration
+          </a>
+          <a href="/#bankruptcy" class="flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-primary shadow-sm transition hover:border-accent hover:bg-orange-50 hover:text-accent">
+            <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg> Bankruptcy
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="flex-grow">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Free Public Records Tools","url":"https://recordwatchdog.com/tools/","description":"Find which office holds a record and build a public records request letter."}</script>
+
+  <section id="tools" class="scroll-mt-16 bg-white py-16">
+    <div class="mx-auto max-w-7xl px-5">
+      <div class="mx-auto max-w-3xl text-center">
+        <p class="font-black uppercase tracking-[0.2em] text-accent">Free tools</p>
+        <h1 class="mt-2 text-4xl font-black text-primary md:text-5xl">Free Public Records Tools</h1>
+        <p class="mt-3 text-lg leading-8 text-slate-600">Two free helpers for finding the right office and asking an agency for records. Both run in your browser, and nothing you type is sent to us or stored.</p>
+      </div>
+      <div class="mt-10 grid gap-8 lg:grid-cols-2">
+
+        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-7 shadow-sm">
+          <h3 class="text-2xl font-black text-primary">Which Office Has the Record?</h3>
+          <p class="mt-2 text-sm leading-6 text-slate-600">Records are split between many offices. Pick what you are looking for to see where it is usually kept and which guides explain the search.</p>
+          <label for="finder-select" class="block text-xs font-black uppercase tracking-[0.12em] text-slate-600 mt-6">I am looking for</label>
+          <select id="finder-select" class="mt-1 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-semibold text-slate-900 outline-none focus:border-accent focus:ring-4 focus:ring-orange-100">
+            <option value="0">A lawsuit, divorce, or other court case</option><option value="1">Who owns a property, and any mortgages or liens</option><option value="2">Whether property taxes are paid</option><option value="3">Whether an LLC or corporation is active</option><option value="4">Checking out a new business partner</option><option value="5">A bankruptcy filing</option><option value="6">A contractor’s license</option><option value="7">Someone in a state prison or county jail</option><option value="8">A sex offender registry search</option><option value="9">A certified copy of a court, land, or business record</option><option value="10">Documents held by a government agency</option><option value="11">Protecting my own information in public records</option>
+          </select>
+          <div class="mt-6 rounded-2xl border border-slate-200 bg-white p-6">
+            
+            <div class="finder-panel" data-id="0">
+              <p class="text-xs font-black uppercase tracking-[0.14em] text-accent">Start with</p>
+              <h4 class="mt-1 text-xl font-black leading-snug text-primary">The Clerk of Court (county or state), or PACER for federal cases</h4>
+              <p class="mt-3 text-sm leading-6 text-slate-600"><strong class="text-slate-800">What it holds:</strong> Dockets, filings, judgments, and orders for cases filed in that court.</p>
+              <p class="mt-2 text-sm leading-6 text-slate-600"><strong class="text-slate-800">Tip:</strong> Start with the county where the case was filed. Federal and state courts keep separate records.</p>
+              <p class="mt-5 text-xs font-black uppercase tracking-[0.14em] text-slate-500">Read next</p>
+              <ul class="mt-2 space-y-1.5 text-sm">
+                <li><a href="/blog/guide-to-county-court-records-and-lawsuit-searches/" class="font-bold text-accent hover:underline">A Comprehensive Guide to County Court Records and Lawsuit Searches</a></li><li><a href="/blog/how-to-read-a-docket-sheet-in-civil-lawsuits/" class="font-bold text-accent hover:underline">How to Read and Understand a Docket Sheet in Civil Lawsuits</a></li>
+              </ul>
+            </div>
+            <div class="finder-panel" data-id="1" hidden>
+              <p class="text-xs font-black uppercase tracking-[0.14em] text-accent">Start with</p>
+              <h4 class="mt-1 text-xl font-black leading-snug text-primary">The County Recorder or Register of Deeds, plus the Assessor</h4>
+              <p class="mt-3 text-sm leading-6 text-slate-600"><strong class="text-slate-800">What it holds:</strong> The recorder keeps deeds, mortgages, liens, and releases. The assessor lists the owner on the tax roll and the assessed value.</p>
+              <p class="mt-2 text-sm leading-6 text-slate-600"><strong class="text-slate-800">Tip:</strong> Search by parcel number when you can. Addresses and owner names are easy to mismatch.</p>
+              <p class="mt-5 text-xs font-black uppercase tracking-[0.14em] text-slate-500">Read next</p>
+              <ul class="mt-2 space-y-1.5 text-sm">
+                <li><a href="/blog/how-to-find-property-records-and-liens-in-your-county/" class="font-bold text-accent hover:underline">How to Find Property Records and Liens in Your County</a></li><li><a href="/blog/county-clerk-vs-recorder-vs-assessor-who-holds-which-records/" class="font-bold text-accent hover:underline">County Clerk vs. Recorder vs. Assessor: Who Holds Which Records?</a></li>
+              </ul>
+            </div>
+            <div class="finder-panel" data-id="2" hidden>
+              <p class="text-xs font-black uppercase tracking-[0.14em] text-accent">Start with</p>
+              <h4 class="mt-1 text-xl font-black leading-snug text-primary">The County Treasurer or Tax Collector</h4>
+              <p class="mt-3 text-sm leading-6 text-slate-600"><strong class="text-slate-800">What it holds:</strong> Tax bills, payments, delinquent amounts, and tax sale status.</p>
+              <p class="mt-2 text-sm leading-6 text-slate-600"><strong class="text-slate-800">Tip:</strong> Also look for a recorded tax lien at the recorder’s office.</p>
+              <p class="mt-5 text-xs font-black uppercase tracking-[0.14em] text-slate-500">Read next</p>
+              <ul class="mt-2 space-y-1.5 text-sm">
+                <li><a href="/blog/county-clerk-vs-recorder-vs-assessor-who-holds-which-records/" class="font-bold text-accent hover:underline">County Clerk vs. Recorder vs. Assessor: Who Holds Which Records?</a></li><li><a href="/blog/how-to-find-property-records-and-liens-in-your-county/" class="font-bold text-accent hover:underline">How to Find Property Records and Liens in Your County</a></li>
+              </ul>
+            </div>
+            <div class="finder-panel" data-id="3" hidden>
+              <p class="text-xs font-black uppercase tracking-[0.14em] text-accent">Start with</p>
+              <h4 class="mt-1 text-xl font-black leading-snug text-primary">The Secretary of State (business filing office) in the state where it was formed</h4>
+              <p class="mt-3 text-sm leading-6 text-slate-600"><strong class="text-slate-800">What it holds:</strong> Entity status, formation date, registered agent, and annual report filings.</p>
+              <p class="mt-2 text-sm leading-6 text-slate-600"><strong class="text-slate-800">Tip:</strong> Check the state of formation and any state where the company does business.</p>
+              <p class="mt-5 text-xs font-black uppercase tracking-[0.14em] text-slate-500">Read next</p>
+              <ul class="mt-2 space-y-1.5 text-sm">
+                <li><a href="/blog/understanding-llc-filings-and-business-entity-searches/" class="font-bold text-accent hover:underline">Understanding LLC Filings: How to Conduct Proper Business Entity Searches</a></li><li><a href="/blog/the-importance-of-registered-agents-in-business-filings/" class="font-bold text-accent hover:underline">The Importance of Registered Agents in Business Filings</a></li>
+              </ul>
+            </div>
+            <div class="finder-panel" data-id="4" hidden>
+              <p class="text-xs font-black uppercase tracking-[0.14em] text-accent">Start with</p>
+              <h4 class="mt-1 text-xl font-black leading-snug text-primary">Several sources used together</h4>
+              <p class="mt-3 text-sm leading-6 text-slate-600"><strong class="text-slate-800">What it holds:</strong> Secretary of State filings, liens and UCC records, court dockets, bankruptcy filings, and licensing boards.</p>
+              <p class="mt-2 text-sm leading-6 text-slate-600"><strong class="text-slate-800">Tip:</strong> Keep a log of each check with the source and the date.</p>
+              <p class="mt-5 text-xs font-black uppercase tracking-[0.14em] text-slate-500">Read next</p>
+              <ul class="mt-2 space-y-1.5 text-sm">
+                <li><a href="/blog/how-to-conduct-due-diligence-on-a-new-business-partner/" class="font-bold text-accent hover:underline">How to Conduct Due Diligence on a New Business Partner</a></li>
+              </ul>
+            </div>
+            <div class="finder-panel" data-id="5" hidden>
+              <p class="text-xs font-black uppercase tracking-[0.14em] text-accent">Start with</p>
+              <h4 class="mt-1 text-xl font-black leading-snug text-primary">The U.S. Bankruptcy Court, searchable through PACER</h4>
+              <p class="mt-3 text-sm leading-6 text-slate-600"><strong class="text-slate-800">What it holds:</strong> Petitions, schedules, trustee reports, and discharge or dismissal orders.</p>
+              <p class="mt-2 text-sm leading-6 text-slate-600"><strong class="text-slate-800">Tip:</strong> Look for a discharge order to see how a case ended.</p>
+              <p class="mt-5 text-xs font-black uppercase tracking-[0.14em] text-slate-500">Read next</p>
+              <ul class="mt-2 space-y-1.5 text-sm">
+                <li><a href="/blog/how-to-search-bankruptcy-records-using-pacer/" class="font-bold text-accent hover:underline">How to Search Bankruptcy Records Using the PACER System</a></li><li><a href="/blog/understanding-chapter-7-vs-chapter-13-bankruptcy-filings/" class="font-bold text-accent hover:underline">Understanding Chapter 7 vs. Chapter 13 Bankruptcy Filings</a></li>
+              </ul>
+            </div>
+            <div class="finder-panel" data-id="6" hidden>
+              <p class="text-xs font-black uppercase tracking-[0.14em] text-accent">Start with</p>
+              <h4 class="mt-1 text-xl font-black leading-snug text-primary">The state contractor or professional licensing board</h4>
+              <p class="mt-3 text-sm leading-6 text-slate-600"><strong class="text-slate-800">What it holds:</strong> License status, classification, expiration date, and any discipline.</p>
+              <p class="mt-2 text-sm leading-6 text-slate-600"><strong class="text-slate-800">Tip:</strong> Confirm the license class covers the kind of work you are hiring for.</p>
+              <p class="mt-5 text-xs font-black uppercase tracking-[0.14em] text-slate-500">Read next</p>
+              <ul class="mt-2 space-y-1.5 text-sm">
+                <li><a href="/blog/how-to-verify-a-contractors-business-license/" class="font-bold text-accent hover:underline">How to Verify a Contractor's Business License and Protect Your Investment</a></li>
+              </ul>
+            </div>
+            <div class="finder-panel" data-id="7" hidden>
+              <p class="text-xs font-black uppercase tracking-[0.14em] text-accent">Start with</p>
+              <h4 class="mt-1 text-xl font-black leading-snug text-primary">The state Department of Corrections (prison) or the county Sheriff (jail)</h4>
+              <p class="mt-3 text-sm leading-6 text-slate-600"><strong class="text-slate-800">What it holds:</strong> Inmate locators and jail rosters showing custody status.</p>
+              <p class="mt-2 text-sm leading-6 text-slate-600"><strong class="text-slate-800">Tip:</strong> Federal inmates are in a separate system run by the Bureau of Prisons.</p>
+              <p class="mt-5 text-xs font-black uppercase tracking-[0.14em] text-slate-500">Read next</p>
+              <ul class="mt-2 space-y-1.5 text-sm">
+                <li><a href="/blog/how-to-find-incarceration-records-by-state/" class="font-bold text-accent hover:underline">How to Find Incarceration Records and Inmate Status by State</a></li><li><a href="/blog/difference-between-state-and-federal-inmate-searches/" class="font-bold text-accent hover:underline">The Critical Difference Between State and Federal Inmate Searches</a></li>
+              </ul>
+            </div>
+            <div class="finder-panel" data-id="8" hidden>
+              <p class="text-xs font-black uppercase tracking-[0.14em] text-accent">Start with</p>
+              <h4 class="mt-1 text-xl font-black leading-snug text-primary">The state registry and the National Sex Offender Public Website</h4>
+              <p class="mt-3 text-sm leading-6 text-slate-600"><strong class="text-slate-800">What it holds:</strong> Registered offender listings, with the details shown varying by state.</p>
+              <p class="mt-2 text-sm leading-6 text-slate-600"><strong class="text-slate-800">Tip:</strong> Registry information is for safety purposes, not for harassment.</p>
+              <p class="mt-5 text-xs font-black uppercase tracking-[0.14em] text-slate-500">Read next</p>
+              <ul class="mt-2 space-y-1.5 text-sm">
+                <li><a href="/blog/navigating-the-national-sex-offender-public-website/" class="font-bold text-accent hover:underline">Navigating the National Sex Offender Public Website (NSOPW)</a></li>
+              </ul>
+            </div>
+            <div class="finder-panel" data-id="9" hidden>
+              <p class="text-xs font-black uppercase tracking-[0.14em] text-accent">Start with</p>
+              <h4 class="mt-1 text-xl font-black leading-snug text-primary">The office that holds the original record</h4>
+              <p class="mt-3 text-sm leading-6 text-slate-600"><strong class="text-slate-800">What it holds:</strong> Certified or exemplified copies for official use.</p>
+              <p class="mt-2 text-sm leading-6 text-slate-600"><strong class="text-slate-800">Tip:</strong> Ask the agency that will receive it exactly what kind of certification it needs.</p>
+              <p class="mt-5 text-xs font-black uppercase tracking-[0.14em] text-slate-500">Read next</p>
+              <ul class="mt-2 space-y-1.5 text-sm">
+                <li><a href="/blog/how-to-request-certified-copies-of-public-records/" class="font-bold text-accent hover:underline">How to Request Certified Copies of Public Records</a></li>
+              </ul>
+            </div>
+            <div class="finder-panel" data-id="10" hidden>
+              <p class="text-xs font-black uppercase tracking-[0.14em] text-accent">Start with</p>
+              <h4 class="mt-1 text-xl font-black leading-snug text-primary">A public records request: FOIA for federal agencies, your state’s law for state and local ones</h4>
+              <p class="mt-3 text-sm leading-6 text-slate-600"><strong class="text-slate-800">What it holds:</strong> Agency contracts, emails, reports, and other records that are not already published.</p>
+              <p class="mt-2 text-sm leading-6 text-slate-600"><strong class="text-slate-800">Tip:</strong> Be specific about the records you want and the date range.</p>
+              <p class="mt-5 text-xs font-black uppercase tracking-[0.14em] text-slate-500">Read next</p>
+              <ul class="mt-2 space-y-1.5 text-sm">
+                <li><a href="/blog/beginners-guide-to-foia-requests/" class="font-bold text-accent hover:underline">A Beginner's Guide to Freedom of Information Act (FOIA) Requests</a></li><li><a href="/blog/the-role-of-public-records-in-journalistic-investigations/" class="font-bold text-accent hover:underline">The Role of Public Records in Journalistic Investigations</a></li>
+              </ul>
+            </div>
+            <div class="finder-panel" data-id="11" hidden>
+              <p class="text-xs font-black uppercase tracking-[0.14em] text-accent">Start with</p>
+              <h4 class="mt-1 text-xl font-black leading-snug text-primary">The office that publishes the record, plus any address confidentiality program you qualify for</h4>
+              <p class="mt-3 text-sm leading-6 text-slate-600"><strong class="text-slate-800">What it holds:</strong> Court dockets, property records, and business filings can show names and addresses.</p>
+              <p class="mt-2 text-sm leading-6 text-slate-600"><strong class="text-slate-800">Tip:</strong> Ask the custodian about redaction, and ask a legal aid office about sealing.</p>
+              <p class="mt-5 text-xs font-black uppercase tracking-[0.14em] text-slate-500">Read next</p>
+              <ul class="mt-2 space-y-1.5 text-sm">
+                <li><a href="/blog/protecting-your-privacy-when-searching-public-records/" class="font-bold text-accent hover:underline">Protecting Your Own Privacy When Searching Public Records</a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="mt-4 text-xs leading-5 text-slate-500">Office names differ by state. If you cannot find the right one, call the county clerk's main line and ask who handles the record.</p>
+        </div>
+
+        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-7 shadow-sm">
+          <h3 class="text-2xl font-black text-primary">Records Request Letter Builder</h3>
+          <p class="mt-2 text-sm leading-6 text-slate-600">Fill in the boxes and get a ready-to-edit letter for a federal FOIA request or a state public records request.</p>
+          <div class="mt-5 grid gap-4 sm:grid-cols-2">
+            <div>
+              <label for="rq-type" class="block text-xs font-black uppercase tracking-[0.12em] text-slate-600">Type of request</label>
+              <select id="rq-type" class="mt-1 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-semibold text-slate-900 outline-none focus:border-accent focus:ring-4 focus:ring-orange-100"><option value="federal">Federal agency (FOIA)</option><option value="state">State or local agency</option></select>
+            </div>
+            <div id="rq-law-wrap" hidden>
+              <label for="rq-law" class="block text-xs font-black uppercase tracking-[0.12em] text-slate-600">Name of state law (optional)</label>
+              <input id="rq-law" type="text" placeholder="e.g. California Public Records Act" class="mt-1 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-semibold text-slate-900 outline-none focus:border-accent focus:ring-4 focus:ring-orange-100" />
+            </div>
+            <div class="sm:col-span-2">
+              <label for="rq-agency" class="block text-xs font-black uppercase tracking-[0.12em] text-slate-600">Agency or office</label>
+              <input id="rq-agency" type="text" placeholder="e.g. Department of Transportation" class="mt-1 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-semibold text-slate-900 outline-none focus:border-accent focus:ring-4 focus:ring-orange-100" />
+            </div>
+            <div class="sm:col-span-2">
+              <label for="rq-desc" class="block text-xs font-black uppercase tracking-[0.12em] text-slate-600">Records you want</label>
+              <textarea id="rq-desc" rows="3" placeholder="e.g. The signed contract, change orders, and final invoices for the Route 9 resurfacing project" class="mt-1 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-semibold text-slate-900 outline-none focus:border-accent focus:ring-4 focus:ring-orange-100"></textarea>
+            </div>
+            <div>
+              <label for="rq-range" class="block text-xs font-black uppercase tracking-[0.12em] text-slate-600">Time period (optional)</label>
+              <input id="rq-range" type="text" placeholder="e.g. January 2024 to June 2025" class="mt-1 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-semibold text-slate-900 outline-none focus:border-accent focus:ring-4 focus:ring-orange-100" />
+            </div>
+            <div>
+              <label for="rq-format" class="block text-xs font-black uppercase tracking-[0.12em] text-slate-600">Preferred format</label>
+              <select id="rq-format" class="mt-1 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-semibold text-slate-900 outline-none focus:border-accent focus:ring-4 focus:ring-orange-100"><option>electronic (PDF)</option><option>electronic (original format)</option><option>paper</option></select>
+            </div>
+            <div>
+              <label for="rq-fee" class="block text-xs font-black uppercase tracking-[0.12em] text-slate-600">Fee limit in dollars</label>
+              <input id="rq-fee" type="number" min="0" value="25" class="mt-1 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-semibold text-slate-900 outline-none focus:border-accent focus:ring-4 focus:ring-orange-100" />
+            </div>
+            <div class="flex items-end">
+              <label class="flex items-center gap-3 text-sm font-bold text-slate-700"><input id="rq-waiver" type="checkbox" class="h-5 w-5 rounded border-slate-300" /> Ask for a fee waiver</label>
+            </div>
+            <div>
+              <label for="rq-name" class="block text-xs font-black uppercase tracking-[0.12em] text-slate-600">Your name</label>
+              <input id="rq-name" type="text" class="mt-1 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-semibold text-slate-900 outline-none focus:border-accent focus:ring-4 focus:ring-orange-100" />
+            </div>
+            <div>
+              <label for="rq-email" class="block text-xs font-black uppercase tracking-[0.12em] text-slate-600">Your email</label>
+              <input id="rq-email" type="email" class="mt-1 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-semibold text-slate-900 outline-none focus:border-accent focus:ring-4 focus:ring-orange-100" />
+            </div>
+          </div>
+          <label for="rq-output" class="block text-xs font-black uppercase tracking-[0.12em] text-slate-600 mt-6">Your letter</label>
+          <textarea id="rq-output" rows="12" readonly class="mt-1 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-semibold text-slate-900 outline-none focus:border-accent focus:ring-4 focus:ring-orange-100 font-mono text-xs leading-5"></textarea>
+          <div class="mt-3 flex flex-wrap items-center gap-4">
+            <button id="rq-copy" type="button" class="rounded-xl bg-accent px-6 py-3 text-sm font-black text-white shadow transition hover:bg-[#e55a25]">Copy letter</button>
+            <a href="/blog/beginners-guide-to-foia-requests/" class="text-sm font-bold text-accent hover:underline">Read the beginner's guide to FOIA</a>
+          </div>
+          <p class="mt-4 text-xs leading-5 text-slate-500">This is a template, not legal advice. Deadlines, fees, and exemptions differ by state, so check the law that applies to your request.</p>
+        </div>
+
+      </div>
+
+      <div class="mx-auto mt-14 max-w-3xl">
+        <div class="prose max-w-none">
+          <h2>How the Office Finder Works</h2>
+          <p>County and state governments are organized differently, so the finder shows the office that usually holds each type of record, not a guarantee. It follows the common roles explained in our guide to county clerks, recorders, and assessors. If your county uses different names, search the county website for the record type, such as "deed search" or "marriage license," or call the main county line and ask who handles it.</p>
+
+          <h2>Using Your Request Letter</h2>
+          <ol>
+            <li><strong>Find the right office.</strong> Federal agencies list a FOIA contact on their websites, and FOIA.gov has a directory. For state and local records, look for the agency's public records officer or custodian.</li>
+            <li><strong>Edit the letter.</strong> Replace any bracketed text and make the description of the records as specific as you can. Narrow requests are answered faster.</li>
+            <li><strong>Send it and keep a copy.</strong> Use the agency's online portal or email if it has one. Save the date you sent it and any tracking number you receive.</li>
+            <li><strong>Follow up.</strong> Federal agencies generally have 20 business days to respond to a FOIA request. State deadlines differ, so check your state's law.</li>
+            <li><strong>Know your options.</strong> If the request is denied, the agency must explain how to appeal. Our <a href="/blog/beginners-guide-to-foia-requests/">beginner's guide to FOIA requests</a> covers exemptions, fees, and appeals.</li>
+          </ol>
+
+          <h2>Good to Know</h2>
+          <p>These tools provide general information and a starting template, not legal advice. The letter is generic, so review it before sending, and check the rules that apply in your state or agency.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+  (function () {
+    var sel = document.getElementById('finder-select');
+    if (sel) {
+      var panels = document.querySelectorAll('.finder-panel');
+      var show = function () { panels.forEach(function (p) { p.hidden = p.getAttribute('data-id') !== sel.value; }); };
+      sel.addEventListener('change', show);
+      show();
+    }
+    var out = document.getElementById('rq-output');
+    if (!out) return;
+    var g = function (id) { var e = document.getElementById(id); return e ? e.value.trim() : ''; };
+    var build = function () {
+      var federal = g('rq-type') === 'federal';
+      document.getElementById('rq-law-wrap').hidden = federal;
+      var law = federal ? 'the Freedom of Information Act, 5 U.S.C. § 552' : (g('rq-law') ? 'the ' + g('rq-law') : 'my state’s public records law');
+      var agency = g('rq-agency') || '[Agency name]';
+      var desc = g('rq-desc') || '[Describe the records you want: document type, subject, and any names or case numbers.]';
+      var range = g('rq-range');
+      var fee = g('rq-fee');
+      var L = [];
+      L.push(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));
+      L.push('');
+      L.push(agency);
+      L.push(federal ? 'FOIA Officer' : 'Public Records Officer');
+      L.push('');
+      L.push('Re: Public records request');
+      L.push('');
+      L.push('To the ' + (federal ? 'FOIA Officer' : 'Records Custodian') + ':');
+      L.push('');
+      L.push('Under ' + law + ', I am requesting copies of the following records:');
+      L.push('');
+      L.push(desc);
+      if (range) { L.push(''); L.push('Time period: ' + range + '.'); }
+      L.push('');
+      L.push('Please send the records in ' + g('rq-format') + ' format to ' + (g('rq-email') || '[your email]') + '.');
+      L.push('');
+      L.push(fee ? 'I am willing to pay reasonable fees up to $' + fee + '. Please contact me before incurring costs above that amount.' : 'Please contact me before incurring any fees.');
+      if (document.getElementById('rq-waiver').checked) {
+        L.push('');
+        L.push('I also request a waiver or reduction of fees, because disclosure of these records is in the public interest and is not primarily for commercial purposes.');
+      }
+      L.push('');
+      L.push('If any part of this request is denied, please identify the legal basis for each withholding and release any portions that can be separated from exempt material. If you need clarification, please contact me.');
+      L.push('');
+      L.push('Thank you for your help.');
+      L.push('');
+      L.push('Sincerely,');
+      L.push(g('rq-name') || '[Your name]');
+      out.value = L.join('\n');
+    };
+    ['rq-type', 'rq-law', 'rq-agency', 'rq-desc', 'rq-range', 'rq-format', 'rq-fee', 'rq-waiver', 'rq-name', 'rq-email'].forEach(function (id) {
+      var e = document.getElementById(id);
+      e.addEventListener('input', build);
+      e.addEventListener('change', build);
+    });
+    document.getElementById('rq-copy').addEventListener('click', function () {
+      var btn = this;
+      out.select();
+      var done = function () { btn.textContent = 'Copied!'; setTimeout(function () { btn.textContent = 'Copy letter'; }, 2000); };
+      if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(out.value).then(done, function () { document.execCommand('copy'); done(); }); }
+      else { document.execCommand('copy'); done(); }
+    });
+    build();
+  })();
+  </script>
+
+  </main>
+  <footer class="bg-[#071638] px-5 py-10 text-white">
+    <div class="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
+      <a href="/" class="flex items-center gap-2">
+        <img src="/recordwatchdog-logo.png" alt="RecordWatchdog" class="h-auto min-w-[150px] max-w-[160px] object-contain" loading="lazy" decoding="async" />
+      </a>
+      <div class="flex flex-wrap gap-5 text-sm font-bold text-slate-300">
+        <a href="/about/" class="transition hover:text-white">About</a>
+        <a href="/blog/" class="transition hover:text-white">Guides</a>
+        <a href="/start-here/" class="transition hover:text-white">Start Here</a>
+        <a href="/glossary/" class="transition hover:text-white">Glossary</a>
+        <a href="/tools/" class="transition hover:text-white">Tools</a>
+        <a href="/privacy-policy/" class="transition hover:text-white">Privacy Policy</a>
+        <a href="/cookie-policy/" class="transition hover:text-white">Cookie Policy</a>
+        <a href="/terms/" class="transition hover:text-white">Terms</a>
+        <a href="/faq/" class="transition hover:text-white">FAQ</a>
+        <a href="/contact/" class="transition hover:text-white">Contact</a>
+        <a href="/dmca/" class="transition hover:text-white">DMCA</a>
+      </div>
+    </div>
+    <div class="mx-auto mt-8 max-w-7xl border-t border-white/10 pt-6 text-center text-xs text-slate-400">
+      <p>&copy; 2026 RecordWatchdog. All rights reserved.</p>
+      <p class="mt-2">RecordWatchdog is an independent website. It is not affiliated with, endorsed by, or operated by any government agency or court, and it is not a consumer reporting agency. We link to official sources and do not provide legal advice.</p>
+    </div>
+  </footer>
+  <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[100] border-t border-slate-200 bg-white p-4 shadow-2xl sm:p-6">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
+      <div class="text-center sm:text-left">
+        <p class="text-sm font-bold text-primary">We value your privacy</p>
+        <p class="mt-1 text-sm text-slate-600">We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. Read our <a href="/privacy-policy/" class="font-bold text-accent underline">Privacy Policy</a>.</p>
+      </div>
+      <div class="flex shrink-0 gap-3">
+        <button onclick="acceptCookies()" class="rounded-lg bg-primary px-6 py-2.5 text-sm font-bold text-white transition hover:bg-[#1a2a5e]">Accept All</button>
+        <a href="/privacy-policy/" class="rounded-lg border border-slate-300 px-6 py-2.5 text-sm font-bold text-slate-700 transition hover:bg-slate-50">Customize</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    // If user already accepted, hide the banner immediately on load
+    if (localStorage.getItem('cookieConsent') === 'true') {
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    function acceptCookies() { 
+      localStorage.setItem('cookieConsent', 'true'); 
+      document.getElementById('cookie-banner').style.display = 'none'; 
+      if (typeof gtag === 'function') {
+        gtag('consent', 'update', { 'ad_storage': 'granted', 'ad_user_data': 'granted', 'ad_personalization': 'granted', 'analytics_storage': 'granted' });
+      }
+    }
+  </script>
+</body>
+</html>
